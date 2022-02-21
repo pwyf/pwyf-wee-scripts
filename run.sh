@@ -1,6 +1,6 @@
 #!/bin/bash
 set -eux
-cp ET.db iati_data.db
-cat covid.sql | sqlite3 iati_data.db
-cat remove_old_tables.sql | sqlite3 iati_data.db
+cat combine.sql | sqlite3
+cat covid.sql | sqlite3 combined.db
+cat remove_old_tables.sql | sqlite3 combined.db
 ./datasette.sh
