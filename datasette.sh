@@ -2,10 +2,10 @@
 set -eux
 rm -rf datasette || true
 mkdir datasette
-cp iati_data.db datasette/
-cp iati_data_filtered.db datasette/
-cp crs_candid_cgap.db datasette/
-cp combined.db datasette/
+mv iati_data.db datasette/
+mv iati_data_filtered.db datasette/
+mv crs_candid_cgap.db datasette/
+mv combined.db datasette/
 cp datasette-src/* datasette/
 cd datasette/
 git init

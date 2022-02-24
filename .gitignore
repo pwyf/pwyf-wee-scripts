@@ -1,3 +1,10 @@
+.ve
+CRS 2015-2020/
+Zip-CGAP+CANDID/
 *.db
-*.csv
+*.xls
+*.xlsx
+*.zip
+*.docx
+covid-transactions.csv
 datasette/

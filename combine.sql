@@ -9,7 +9,7 @@ ATTACH DATABASE "combined.db" AS combined;
 .import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Ethiopia.csv" candid
 .import "./Zip-CGAP+CANDID/CGAP-Phase2-de-duplicated.csv" cgap
 
-CREATE TABLE combined.combined AS SELECT
+CREATE TABLE combined_tmp  AS SELECT
     'IATI' AS "Data Source",
 
     "reporting_org#en" AS "Reporting Organisation",
@@ -34,8 +34,8 @@ CREATE TABLE combined.combined AS SELECT
     "iati_identifier" AS "Unique ID",
     "gender_marker_significance" AS "Gender Marker Significance",
     "value_usd" AS "Value (USD)",
-
     "flow_type" AS "Flow Type",
+
     "provider_org_type" AS "Provider Organisation Type",
     "multi_country" AS "Multi Country",
     "humanitarian" AS "Humanitarian",
@@ -76,8 +76,8 @@ SELECT
     "Unique ID" AS "Unique ID",
     "Women" AS "Gender Marker Significance",
     NULL AS "Value (USD)",
-
     NULL AS "Flow Type",
+
     NULL AS "Provider Organisation Type",
     NULL AS "Multi Country",
     NULL AS "Humanitarian",
@@ -116,8 +116,8 @@ SELECT
     "CrsID" AS "Unique ID",
     "Gender" AS "Gender Marker Significance",
     NULL AS "Value (USD)",
+    "FlowCode" || ' - ' || "FlowName" AS "Flow Type",
 
-    NULL AS "Flow Type",
     NULL AS "Provider Organisation Type",
     NULL AS "Multi Country",
     NULL AS "Humanitarian",
@@ -156,8 +156,8 @@ SELECT
     "Unique ID",
     "Gender marker" AS "Gender Marker Significance",
     "Value (USD)",
-
     NULL AS "Flow Type",
+
     NULL AS "Provider Organisation Type",
     NULL AS "Multi Country",
     NULL AS "Humanitarian",
@@ -173,3 +173,27 @@ FROM candid
 ;
 
 
+
+.import 'Finance types - Finance type filter.csv' finance_type_filter
+.import 'Finance types - Transaction type filter.csv' transaction_type_filter
+.import 'Finance types - Flow name filter.csv' flow_name_filter
+
+create table combined.combined as
+select
+    combined_tmp.*,
+    trim(substr("Finance Type", 0, instr("Finance Type" || '-', '-'))) AS "Finance Type Code",
+    trim(substr("Flow Type", 0, instr("Flow Type" || '-', '-'))) AS "Flow Type Code",
+    -- For CANDID all activities are grants so keep all blanks.
+    -- https://publishwhatyoufund.sharepoint.com/:x:/g/ETwXwO_JNGdCkzgQ-LnaYdEBWlJPdkYjNeQY1hEdqQae1w?rtime=xkq1Q4f32Ug
+    case combined_tmp."Data Source" when "CANDID" then "N" else finance_type_filter."Loan Y/N" end AS "Finance Type Filter Loan Y/N",
+    case combined_tmp."Data Source" when "CANDID" then "Y" else finance_type_filter."Grant Y/N" end AS "Finance Type Filter Grant Y/N",
+    transaction_type_filter."Loan Y/N" AS "Transaction Type Filter Loan Y/N",
+    transaction_type_filter."Grant Y/N" AS "Transaction Type Filter Grant Y/N",
+    flow_name_filter."Loan Y/N" AS "Flow Type Filter Loan Y/N",
+    flow_name_filter."Grant Y/N" AS "Flow Type Filter Grant Y/N"
+from
+    combined_tmp
+    left join finance_type_filter on "Finance Type Code"="Finance types"
+    left join transaction_type_filter on "Transaction Type"="Transaction types"
+    left join flow_name_filter on "Flow Type Code"="Flow name";
+;

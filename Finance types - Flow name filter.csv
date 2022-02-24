@@ -1,0 +1,8 @@
+Flow name,Loan Y/N,Grant Y/N,Country reported,Data source
+Equity Investment,Y,N,,IATI/CRS
+ODA Grants,N,Y,,IATI/CRS
+ODA Loans,Y,N,,IATI/CRS
+Other Official Flows (non Export Credit),Exclude UNLESS the finance type is relevant,Exclude UNLESS the finance type is relevant,,IATI/CRS
+Private Development Finance,Y,N,,IATI/CRS
+,B,B,,ALL
+No data,B,B,,ALL

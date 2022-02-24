@@ -1,0 +1,34 @@
+Finance types,Loan Y/N,Grant Y/N,Country reported,Data source
+110,N,Y,All,IATI/CRS
+422,N,Y,Bangladesh,IATI/CRS
+Cash grants,N,Y,"Kenya, Bangladesh",Candid
+Cash grants; Grants to individuals,N,Y,Kenya,Candid
+Grants to individuals,N,Y,"Kenya, Bangladesh",Candid
+,B,B,All,All
+No data,B,B,All,All
+111,N,N,Kenya,IATI/CRS
+210,N,N,"Kenya, Bangladesh",IATI/CRS
+210,N,N,"Kenya, Bangladesh",IATI/CRS
+310,N,N,"Kenya, Bangladesh",IATI/CRS
+311,N,N,Bangladesh,IATI/CRS
+610,N,N,Bangladesh,IATI/CRS
+611,N,N,"Kenya, Bangladesh",IATI/CRS
+618,N,N,"Bangladesh, Nigeria",IATI/CRS
+621,N,N,Kenya,IATI/CRS
+912,N,N,All,IATI/CRS
+410,Y,N,All,IATI/CRS
+411,Y,N,All,IATI/CRS
+413,Y,N,All,IATI/CRS
+421,Y,N,All,IATI/CRS
+431,Y,N,"Kenya, Bangladesh, Nigeria",IATI/CRS
+510,Y,N,All,IATI/CRS
+511,Y,N,All,IATI/CRS
+520,Y,N,All,IATI/CRS
+432,Y,N,Kenya,IATI/CRS
+433,Y,N,Kenya,IATI/CRS
+1100,Y,N,"Kenya, Nigeria",IATI/CRS
+DEBT,Y,N,,CGAP
+GUARANTEE,Y,N,,CGAP
+GRANT,N,Y,,CGAP
+Structured finance,Y,N,,CGAP
+EQUITY,Y,N,,CGAP

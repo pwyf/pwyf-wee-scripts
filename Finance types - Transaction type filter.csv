@@ -1,0 +1,10 @@
+Transaction types,Loan Y/N,Grant Y/N,data source
+1 - Incoming Funds,N,N,IATI
+2 - Outgoing Commitment,Y,N,IATI
+3 - Disbursement,N,Y,IATI
+4 - Expenditure,N,Y,IATI
+A,Y,N,CANDID
+P,N,Y,CANDID
+Blanks (CRS only),Y,Y,CRS
+Disbursement ,N,Y,CGAP
+Commitment,Y,N ,CG
