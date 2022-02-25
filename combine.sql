@@ -1,13 +1,25 @@
 ATTACH DATABASE "iati_data_filtered.db" AS iati_data_filtered;
 ATTACH DATABASE "combined.db" AS combined;
 .mode csv
-.import "./CRS 2015-2020/Uganda_CRS.csv" crs
-.import "./CRS 2015-2020/CRS_Pakistan.csv" crs
-.import "./CRS 2015-2020/CRS_Ethiopia.csv" crs
-.import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Uganda.csv" candid
-.import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Pakistan.csv" candid
-.import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Ethiopia.csv" candid
+.import "./CRS 2015-2020/Uganda_CRS.csv" crs_uganda
+.import "./CRS 2015-2020/CRS_Pakistan.csv" crs_pakistan
+.import "./CRS 2015-2020/CRS_Ethiopia.csv" crs_ethiopia
+.import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Uganda.csv" candid_uganda
+.import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Pakistan.csv" candid_pakistan
+.import "./Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Ethiopia.csv" candid_ethiopia
 .import "./Zip-CGAP+CANDID/CGAP-Phase2-de-duplicated.csv" cgap
+
+-- Note: This relies on the columns being the same across all 3
+CREATE TABLE crs AS
+    SELECT * FROM crs_uganda UNION ALL
+    SELECT * FROM crs_pakistan UNION ALL
+    SELECT * FROM crs_ethiopia
+;
+CREATE TABLE candid AS
+    SELECT * FROM candid_uganda UNION ALL
+    SELECT * FROM candid_pakistan UNION ALL
+    SELECT * FROM candid_ethiopia
+;
 
 CREATE TABLE combined_tmp  AS SELECT
     'IATI' AS "Data Source",
