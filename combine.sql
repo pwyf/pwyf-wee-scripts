@@ -73,7 +73,7 @@ SELECT
     -- TODO ALso ultimate recipient for next 2
     "Primary recipient" AS "Receiver Organisation",
     "Ultimate Recipient Type" AS "Receiver Organisation Type",
-    NULL AS "Transaction Type",
+    '' AS "Transaction Type",
     "Country" AS "Recipient Country",
     "Final Theme" AS "Sector code (3-digit)",
     NULL AS "Sector name (3-digit)",
@@ -88,7 +88,7 @@ SELECT
     "Unique ID" AS "Unique ID",
     "Women" AS "Gender Marker Significance",
     NULL AS "Value (USD)",
-    NULL AS "Flow Type",
+    '' AS "Flow Type",
 
     NULL AS "Provider Organisation Type",
     NULL AS "Multi Country",
@@ -114,7 +114,7 @@ SELECT
     "Finance_t" AS "Finance Type",
     "ChannelReportedName" AS "Receiver Organisation",
     "ChannelName" AS "Receiver Organisation Type",
-    NULL AS "Transaction Type",
+    '' AS "Transaction Type",
     "RecipientName" AS "Recipient Country",
     "SectorCode" AS "Sector code (3-digit)",
     "SectorName" AS "Sector name (3-digit)",
@@ -168,7 +168,7 @@ SELECT
     "Unique ID",
     "Gender marker" AS "Gender Marker Significance",
     "Value (USD)",
-    NULL AS "Flow Type",
+    '' AS "Flow Type",
 
     NULL AS "Provider Organisation Type",
     NULL AS "Multi Country",
@@ -202,7 +202,15 @@ select
     transaction_type_filter."Loan Y/N" AS "Transaction Type Filter Loan Y/N",
     transaction_type_filter."Grant Y/N" AS "Transaction Type Filter Grant Y/N",
     flow_name_filter."Loan Y/N" AS "Flow Type Filter Loan Y/N",
-    flow_name_filter."Grant Y/N" AS "Flow Type Filter Grant Y/N"
+    flow_name_filter."Grant Y/N" AS "Flow Type Filter Grant Y/N",
+    (finance_type_filter."Loan Y/N"="Y" AND transaction_type_filter."Loan Y/N"="Y" AND flow_name_filter."Loan Y/N"="Y")
+        OR (finance_type_filter."Loan Y/N"="B" AND transaction_type_filter."Loan Y/N"="Y" AND flow_name_filter."Loan Y/N"="Y")
+        OR (finance_type_filter."Loan Y/N"="Y" AND transaction_type_filter."Loan Y/N"="Y" AND flow_name_filter."Loan Y/N"="B")
+        AS "Loans to keep",
+    (finance_type_filter."Grant Y/N"="Y" AND transaction_type_filter."Grant Y/N"="Y" AND flow_name_filter."Grant Y/N"="Y")
+        OR (finance_type_filter."Grant Y/N"="B" AND transaction_type_filter."Grant Y/N"="Y" AND flow_name_filter."Grant Y/N"="Y")
+        OR (finance_type_filter."Grant Y/N"="Y" AND transaction_type_filter."Grant Y/N"="Y" AND flow_name_filter."Grant Y/N"="B")
+        AS "Grants to keep"
 from
     combined_tmp
     left join finance_type_filter on "Finance Type Code"="Finance types"
