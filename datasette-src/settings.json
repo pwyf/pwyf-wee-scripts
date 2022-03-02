@@ -1,4 +1,5 @@
 {
     "sql_time_limit_ms": 60000,
-    "facet_time_limit_ms": 10000
+    "facet_time_limit_ms": 10000,
+    "max_returned_rows": 100000
 }
