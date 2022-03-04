@@ -235,12 +235,12 @@ from
     left join flow_name_filter on `Flow Type Code`=`Flow name`
     left join duplicates
     on
-        trim(duplicates.`Reporting organisation`)=trim(combined_tmp.`Reporting Organisation`) and
-        trim(duplicates.`Provider Organisation`)=trim(combined_tmp.`Provider Organisation`) and
-        trim(duplicates.`Recipient Country`)=trim(combined_tmp.`Recipient Country`)
+        trim(lower(duplicates.`Reporting organisation`))=trim(lower(combined_tmp.`Reporting Organisation`)) and
+        trim(lower(duplicates.`Provider Organisation`))=trim(lower(combined_tmp.`Provider Organisation`)) and
+        trim(lower(duplicates.`Recipient Country`))=trim(lower(combined_tmp.`Recipient Country`))
     left join double_counts
     on
-        trim(double_counts.`Provider Org. `)=trim(combined_tmp.`Provider Organisation`) and
-        trim(double_counts.`Unique ID`)=trim(combined_tmp.`Unique ID`)
+        trim(lower(double_counts.`Provider Org. `))=trim(lower(combined_tmp.`Provider Organisation`)) and
+        trim(lower(double_counts.`Unique ID`))=trim(lower(combined_tmp.`Unique ID`))
 ;
 
