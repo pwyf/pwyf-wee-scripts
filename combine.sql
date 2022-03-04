@@ -33,7 +33,7 @@ CREATE TABLE combined_tmp  AS SELECT
     `receiver_org#en` AS `Receiver Organisation`,
     `receiver_org_type` AS `Receiver Organisation Type`,
     `transaction_type` AS `Transaction Type`,
-    `country_code` AS `Recipient Country`,
+    trim(substr(`country_code`, instr(`country_code` || '-', '-') + 2)) AS `Recipient Country`,
     `sector_category` AS `Sector code (3-digit)`,
     `sector_category_name` AS `Sector name (3-digit)`,
     `sector_code` AS `Purpose code (5-digit)`,
@@ -189,6 +189,23 @@ FROM candid
 .import 'Finance types - Finance type filter.csv' finance_type_filter
 .import 'Finance types - Transaction type filter.csv' transaction_type_filter
 .import 'Finance types - Flow name filter.csv' flow_name_filter
+.import 'duplicate quality decisions_phase2_v2_ET.csv' duplicates_et
+.import 'duplicate quality decisions_phase2_v2_PK.csv' duplicates_pk
+.import 'duplicate quality decisions_phase2_v2_UG.csv' duplicates_ug
+.import 'Double counts to remove_updated_ET.csv' double_counts_et
+.import 'Double counts to remove_updated_PK.csv' double_counts_pk
+.import 'Double counts to remove_updated_UG.csv' double_counts_ug
+
+
+create table duplicates as
+    select *, 'Ethiopia' AS `Recipient Country` from duplicates_et union all
+    select *, 'Pakistan' AS `Recipient Country` from duplicates_pk union all
+    select *, 'Uganda' AS `Recipient Country` from duplicates_ug;
+
+create table double_counts as
+    select *, 'Ethiopia' AS `Recipient Country` from double_counts_et union all
+    select *, 'Pakistan' AS `Recipient Country` from double_counts_pk union all
+    select *, 'Uganda' AS `Recipient Country` from double_counts_ug;
 
 create table combined.combined as
 select
@@ -210,10 +227,23 @@ select
     (finance_type_filter.`Grant Y/N`='Y' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='Y')
         OR (finance_type_filter.`Grant Y/N`='B' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='Y')
         OR (finance_type_filter.`Grant Y/N`='Y' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='B')
-        AS `Grants to keep`
+        AS `Grants to keep`,
+    duplicates."Loans" AS "Duplicate Loans Keep",
+    duplicates."Grants" AS "Duplicate Grants Keep",
+    double_counts."Unique ID" is NULL AS "Double Counts Keep"
 from
     combined_tmp
     left join finance_type_filter on `Finance Type Code`=`Finance types`
     left join transaction_type_filter on `Transaction Type`=`Transaction types`
-    left join flow_name_filter on `Flow Type Code`=`Flow name`;
+    left join flow_name_filter on `Flow Type Code`=`Flow name`
+    left join duplicates
+    on
+        trim(duplicates.`Reporting organisation`)=trim(combined_tmp.`Reporting Organisation`) and
+        trim(duplicates.`Provider Organisation`)=trim(combined_tmp.`Provider Organisation`) and
+        trim(duplicates.`Recipient Country`)=trim(combined_tmp.`Recipient Country`)
+    left join double_counts
+    on
+        trim(double_counts.`Provider Org. `)=trim(combined_tmp.`Provider Organisation`) and
+        trim(double_counts.`Unique ID`)=trim(combined_tmp.`Unique ID`)
 ;
+
