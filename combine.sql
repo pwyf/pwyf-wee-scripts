@@ -1,5 +1,4 @@
 ATTACH DATABASE 'iati_data_filtered.db' AS iati_data_filtered;
-ATTACH DATABASE 'combined.db' AS combined;
 .mode csv
 .import './CRS 2015-2020/Uganda_CRS.csv' crs_uganda
 .import './CRS 2015-2020/CRS_Pakistan.csv' crs_pakistan
@@ -185,7 +184,6 @@ FROM candid
 ;
 
 
-
 .import 'Finance types - Finance type filter.csv' finance_type_filter
 .import 'Finance types - Transaction type filter.csv' transaction_type_filter
 .import 'Finance types - Flow name filter.csv' flow_name_filter
@@ -195,7 +193,6 @@ FROM candid
 .import 'Double counts to remove_updated_ET.csv' double_counts_et
 .import 'Double counts to remove_updated_PK.csv' double_counts_pk
 .import 'Double counts to remove_updated_UG.csv' double_counts_ug
-
 
 create table duplicates as
     select *, 'Ethiopia' AS `Recipient Country` from duplicates_et union all
@@ -207,7 +204,7 @@ create table double_counts as
     select *, 'Pakistan' AS `Recipient Country` from double_counts_pk union all
     select *, 'Uganda' AS `Recipient Country` from double_counts_ug;
 
-create table combined.combined as
+create table combined_tmp_filters as
 select
     combined_tmp.*,
     trim(substr(`Finance Type`, 0, instr(`Finance Type` || '-', '-'))) AS `Finance Type Code`,
