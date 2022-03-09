@@ -1,50 +1,50 @@
 Match number,Reporting organisation,Provider Organisation,Data source,Loans,Grants
-2,Australia,Australian Government,CRS,1,n/a
-2,Australia,Miscellaneous,CRS,1,n/a
-2,Australia - Department of Foreign Affairs and Trade [AU-5],Australia - Department of Foreign Affairs and Trade [AU-5],IATI,0,n/a
-3,Bill & Melinda Gates Foundation,Bill & Melinda Gates Foundation,CRS,0,n/a
-3,Bill & Melinda Gates Foundation [DAC-1601],Bill & Melinda Gates Foundation [DAC-1601],IATI,1,n/a
-4,Canada,Global Affairs Canada,CRS,1,n/a
-4,Canada - Global Affairs Canada | Affaires mondiales Canada [CA-3],Canada - Global Affairs Canada | Affaires mondiales Canada [CA-3],IATI,0,n/a
+2,Australia,Australian Government,CRS,n/a,1
+2,Australia,Miscellaneous,CRS,n/a,1
+2,Australia - Department of Foreign Affairs and Trade [AU-5],Australia - Department of Foreign Affairs and Trade [AU-5],IATI,n/a,0
+3,Bill & Melinda Gates Foundation,Bill & Melinda Gates Foundation,CRS,n/a,0
+3,Bill & Melinda Gates Foundation [DAC-1601],Bill & Melinda Gates Foundation [DAC-1601],IATI,n/a,1
+4,Canada,Global Affairs Canada,CRS,n/a,1
+4,Canada - Global Affairs Canada | Affaires mondiales Canada [CA-3],Canada - Global Affairs Canada | Affaires mondiales Canada [CA-3],IATI,n/a,0
 4,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Canada. Global Affairs Canada,IATI,n/a,n/a
-4.5,Canada,International Development Research Centre,CRS,0,n/a
+4.5,Canada,International Development Research Centre,CRS,n/a,0
 4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Australian Centre for International Agricultural Research,IATI,n/a,n/a
-4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Bill & Melinda Gates Foundation,IATI,1,n/a
-4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Canada. Parliament,IATI,1,n/a
-4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Canadian International Development Agency,IATI,1,n/a
-4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Great Britain. Dept for International Development,IATI,1,n/a
+4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Bill & Melinda Gates Foundation,IATI,n/a,1
+4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Canada. Parliament,IATI,n/a,1
+4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Canadian International Development Agency,IATI,n/a,1
+4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Great Britain. Dept for International Development,IATI,n/a,1
 4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Netherlands. Ministerie van Buitenlandse Zaken,IATI,n/a,n/a
-4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Norwegian Agency for Development Cooperation,IATI,1,n/a
-4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],William and Flora Hewlett Foundation,IATI,1,n/a
-6,"UK - Department for Business, Energy and Industrial Strategy (BEIS) [GB-GOV-13]","UK - Department for Business, Energy and Industrial Strategy (BEIS) [GB-GOV-13]",IATI,0,n/a
-6,"UK - Department for Environment, Food and Rural Affairs [GB-GOV-7]","UK - Department for Environment, Food and Rural Affairs [GB-GOV-7]",IATI,0,n/a
-6,"UK - Foreign, Commonwealth and Development Office [GB-GOV-1]","UK - Foreign, Commonwealth and Development Office [GB-GOV-1]",IATI,0,n/a
-6,United Kingdom,"Department for Business, Energy and Industrial Strategy",CRS,1,n/a
-6,United Kingdom,"Department for Business, Innovation and Skills",CRS,1,n/a
-6,United Kingdom,Department for Environment Food and Rural Affairs,CRS,1,n/a
-6,United Kingdom,Department for International Development,CRS,1,n/a
-6,United Kingdom,Foreign & Commonwealth Office,CRS,1,n/a
-7,Central Emergency Response Fund,Rapid Response,CRS,0,n/a
-7,United Nations Central Emergency Response Fund (CERF) [XM-OCHA-CERF],United Nations Central Emergency Response Fund (CERF) [XM-OCHA-CERF],IATI,1,n/a
-8,Denmark,Investment Fund For Developing Countries,CRS,n/a,0
-8,Denmark,Ministry of Foreign Affairs,CRS,1,n/a
-8,"Denmark - Ministry of Foreign Affairs, Danida [XM-DAC-3-1]","Denmark - Ministry of Foreign Affairs, Danida [XM-DAC-3-1]",IATI,0,n/a
-9,EU Institutions,European Commission,CRS,1,n/a
-9,European Commission - Humanitarian Aid & Civil Protection [XI-IATI-EC_ECHO],European Commission - Humanitarian Aid & Civil Protection [XI-IATI-EC_ECHO],IATI,0,n/a
-9,European Commission - International Partnerships [XI-IATI-EC_INTPA],European Commission - International Partnerships [XI-IATI-EC_INTPA],IATI,0,n/a
-9,European Commission - Service for Foreign Policy Instruments [XI-IATI-EC_FPI],European Commission - Service for Foreign Policy Instruments [XI-IATI-EC_FPI],IATI,0,n/a
-10,UNFPA,UNFPA,CRS,0,n/a
+4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],Norwegian Agency for Development Cooperation,IATI,n/a,1
+4.5,Canada - International Development Research Centre/Centre de recherches pour le développement international [XM-DAC-301-2],William and Flora Hewlett Foundation,IATI,n/a,1
+6,"UK - Department for Business, Energy and Industrial Strategy (BEIS) [GB-GOV-13]","UK - Department for Business, Energy and Industrial Strategy (BEIS) [GB-GOV-13]",IATI,n/a,0
+6,"UK - Department for Environment, Food and Rural Affairs [GB-GOV-7]","UK - Department for Environment, Food and Rural Affairs [GB-GOV-7]",IATI,n/a,0
+6,"UK - Foreign, Commonwealth and Development Office [GB-GOV-1]","UK - Foreign, Commonwealth and Development Office [GB-GOV-1]",IATI,n/a,0
+6,United Kingdom,"Department for Business, Energy and Industrial Strategy",CRS,n/a,1
+6,United Kingdom,"Department for Business, Innovation and Skills",CRS,n/a,1
+6,United Kingdom,Department for Environment Food and Rural Affairs,CRS,n/a,1
+6,United Kingdom,Department for International Development,CRS,n/a,1
+6,United Kingdom,Foreign & Commonwealth Office,CRS,n/a,1
+7,Central Emergency Response Fund,Rapid Response,CRS,n/a,0
+7,United Nations Central Emergency Response Fund (CERF) [XM-OCHA-CERF],United Nations Central Emergency Response Fund (CERF) [XM-OCHA-CERF],IATI,n/a,1
+8,Denmark,Investment Fund For Developing Countries,CRS,0,n/a
+8,Denmark,Ministry of Foreign Affairs,CRS,n/a,1
+8,"Denmark - Ministry of Foreign Affairs, Danida [XM-DAC-3-1]","Denmark - Ministry of Foreign Affairs, Danida [XM-DAC-3-1]",IATI,n/a,0
+9,EU Institutions,European Commission,CRS,n/a,1
+9,European Commission - Humanitarian Aid & Civil Protection [XI-IATI-EC_ECHO],European Commission - Humanitarian Aid & Civil Protection [XI-IATI-EC_ECHO],IATI,n/a,0
+9,European Commission - International Partnerships [XI-IATI-EC_INTPA],European Commission - International Partnerships [XI-IATI-EC_INTPA],IATI,n/a,0
+9,European Commission - Service for Foreign Policy Instruments [XI-IATI-EC_FPI],European Commission - Service for Foreign Policy Instruments [XI-IATI-EC_FPI],IATI,n/a,0
+10,UNFPA,UNFPA,CRS,n/a,0
 10,United Nations Population Fund [41119],United Nations Population Fund [41119],IATI,n/a,n/a
-11,Finland,Finnish Government,CRS,0,n/a
-11,Finland,Ministry of Foreign Affairs,CRS,0,n/a
-11,Finland,,CRS,n/a,0
-11,Finland - Ministry for Foreign Affairs [FI-3],Finland - Ministry for Foreign Affairs [FI-3],IATI,1,n/a
-12,Food and Agriculture Organisation,FAO,CRS,1,n/a
+11,Finland,Finnish Government,CRS,n/a,0
+11,Finland,Ministry of Foreign Affairs,CRS,n/a,0
+11,Finland,,CRS,0,n/a
+11,Finland - Ministry for Foreign Affairs [FI-3],Finland - Ministry for Foreign Affairs [FI-3],IATI,n/a,1
+12,Food and Agriculture Organisation,FAO,CRS,n/a,1
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Belgium [XM-DAC-2],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Bill Melinda Gates Foundation [XM-DAC-1601],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Canada [XM-DAC-301],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],EU Institutions [XM-DAC-42000],IATI,n/a,n/a
-12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],IATI,0,n/a
+12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],IATI,n/a,0
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Germany [XM-DAC-5],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],International Bank for Reconstruction and Develoment [XM-DAC-44000],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],International Food Policy Research Institute [XM-DAC-51001],IATI,n/a,n/a
@@ -65,30 +65,30 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],United Nations Office for the Coordination of Humanitarian Affairs (OCHA) [XM-DAC-41127],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],United Nations World Food Programme (WFP) [XM-DAC-41140],IATI,n/a,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],United States [XM-DAC-302],IATI,n/a,n/a
-13,France,Ministry of Foreign Affairs,CRS,0,n/a
+13,France,Ministry of Foreign Affairs,CRS,n/a,0
 13,France - Ministry for Europe and Foreign Affairs [FR-6],France - Ministry for Europe and Foreign Affairs [FR-6],IATI,n/a,n/a
-13.5,Agence Française de Développement [FR-3],Agence Française de Développement [FR-3],IATI,1,n/a
+13.5,Agence Française de Développement [FR-3],Agence Française de Développement [FR-3],IATI,n/a,1
 13.5,France,French Development Agency,CRS,0,0
-14,"Gavi, the vaccine alliance [47122]","Gavi, the vaccine alliance [47122]",IATI,1,n/a
-14,"Gavi, the vaccine alliance [47122]",United Nations Children's Fund (UNICEF) [XM-DAC-41122],IATI,1,n/a
-14,Global Alliance for Vaccines and Immunization,GAVI,CRS,0,n/a
-15,Germany,Foreign Office,CRS,0,n/a
-15,Germany - Federal Foreign Office [XM-DAC-5-7],Germany - Federal Foreign Office [XM-DAC-5-7],IATI,1,n/a
-15.5,Germany,Bundesministerium f³r Wirtschaftliche Zusammenarbeit und Entwicklung,CRS,0,n/a
-15.5,Germany,Bundesministerium für Wirtschaftliche Zusammenarbeit und Entwicklung,CRS,0,n/a
-15.5,Germany - Ministry for Economic Cooperation and Development [DE-1],Germany - Ministry for Economic Cooperation and Development [DE-1],IATI,1,n/a
-16,Global Fund,Global Fund,CRS,1,n/a
-16,"The Global Fund to Fight AIDS, Tuberculosis and Malaria [47045]","The Global Fund to Fight AIDS, Tuberculosis and Malaria [47045]",IATI,0,n/a
+14,"Gavi, the vaccine alliance [47122]","Gavi, the vaccine alliance [47122]",IATI,n/a,1
+14,"Gavi, the vaccine alliance [47122]",United Nations Children's Fund (UNICEF) [XM-DAC-41122],IATI,n/a,1
+14,Global Alliance for Vaccines and Immunization,GAVI,CRS,n/a,0
+15,Germany,Foreign Office,CRS,n/a,0
+15,Germany - Federal Foreign Office [XM-DAC-5-7],Germany - Federal Foreign Office [XM-DAC-5-7],IATI,n/a,1
+15.5,Germany,Bundesministerium f³r Wirtschaftliche Zusammenarbeit und Entwicklung,CRS,n/a,0
+15.5,Germany,Bundesministerium für Wirtschaftliche Zusammenarbeit und Entwicklung,CRS,n/a,0
+15.5,Germany - Ministry for Economic Cooperation and Development [DE-1],Germany - Ministry for Economic Cooperation and Development [DE-1],IATI,n/a,1
+16,Global Fund,Global Fund,CRS,n/a,1
+16,"The Global Fund to Fight AIDS, Tuberculosis and Malaria [47045]","The Global Fund to Fight AIDS, Tuberculosis and Malaria [47045]",IATI,n/a,0
 17,IFAD,IFAD,CRS,1,1
 17,International Fund for Agricultural Development (IFAD) [XM-DAC-41108],International Fund for Agricultural Development (IFAD) [XM-DAC-41108],IATI,0,0
-18,International Development Association,IDA,CRS,0,1
-18,The World Bank [44000],International Development Association [44002],IATI,n/a,0
-18,The World Bank [44000],International Development Association [44002],IATI,n/a,0
-19,International Finance Corporation,International Finance Corporation,CRS,n/a,1
-19,International Finance Corporation [XM-DAC-903],International Finance Corporation [XM-DAC-903],IATI,n/a,0
-20,International Labour Organisation,Regular Budget (excluding technical co-operation),CRS,1,n/a
-20,International Labour Organisation,Regular Budget Supplementary Account,CRS,1,n/a
-20,International Labour Organisation,Regular Budget Technical Cooperation,CRS,1,n/a
+18,International Development Association,IDA,CRS,1,0
+18,The World Bank [44000],International Development Association [44002],IATI,0,n/a
+18,The World Bank [44000],International Development Association [44002],IATI,0,n/a
+19,International Finance Corporation,International Finance Corporation,CRS,1,n/a
+19,International Finance Corporation [XM-DAC-903],International Finance Corporation [XM-DAC-903],IATI,0,n/a
+20,International Labour Organisation,Regular Budget (excluding technical co-operation),CRS,n/a,1
+20,International Labour Organisation,Regular Budget Supplementary Account,CRS,n/a,1
+20,International Labour Organisation,Regular Budget Technical Cooperation,CRS,n/a,1
 20,International Labour Organization (ILO) [XM-DAC-41302],Delegation of the European Union to Ethiopia,IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],Delegation of the European Union to Ethiopia ,IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],Delegation of the European Union to Ethiopia [tbc],IATI,n/a,n/a
@@ -96,7 +96,7 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 20,International Labour Organization (ILO) [XM-DAC-41302],European Commission - International Cooperation and Development [XI-IATI-EC_DEVCO],IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],"Germany, Junior Professional Programme",IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],H&M Hennes & Mauritz AB ,IATI,n/a,n/a
-20,International Labour Organization (ILO) [XM-DAC-41302],International Labour Organization (ILO) [XM-DAC-41302],IATI,0,n/a
+20,International Labour Organization (ILO) [XM-DAC-41302],International Labour Organization (ILO) [XM-DAC-41302],IATI,n/a,0
 20,International Labour Organization (ILO) [XM-DAC-41302],Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],IATI,n/a,n/a
 20,G,Multi-donor funding to SCORE (SECO & NORAD),IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],Multi-donor funding to the Vision Zero Fund,IATI,n/a,n/a
@@ -111,51 +111,51 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 20,International Labour Organization (ILO) [XM-DAC-41302],"United Kingdom, Department for International Development ",IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],United Nations Capital Development Fund [XM-DAC-41111],IATI,n/a,n/a
 20,International Labour Organization (ILO) [XM-DAC-41302],United Nations High Commissioner for Refugees ,IATI,n/a,n/a
-21,Ireland,Department of Foreign Affairs,CRS,0,n/a
-21,Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],IATI,0,n/a
-22,AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development [XM-DAC-6-4],AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development [XM-DAC-6-4],IATI,0,n/a
-22,Italy,Direzione Generale per la Cooperazione allo Sviluppo,CRS,0,n/a
-23,Japan,Ministry of Foreign Affairs,CRS,0,n/a
-23,Japan,Prefectures,CRS,0,n/a
+21,Ireland,Department of Foreign Affairs,CRS,n/a,0
+21,Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],IATI,n/a,0
+22,AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development [XM-DAC-6-4],AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development [XM-DAC-6-4],IATI,n/a,0
+22,Italy,Direzione Generale per la Cooperazione allo Sviluppo,CRS,n/a,0
+23,Japan,Ministry of Foreign Affairs,CRS,n/a,0
+23,Japan,Prefectures,CRS,n/a,0
 23,Ministry of Foreign Affairs of Japan [XM-DAC-701-2],Ministry of Foreign Affairs [JP-2],IATI,n/a,n/a
-24,Japan,Japanese International Co-operation Agency,CRS,0,1
-24,Ministry of Foreign Affairs of Japan [XM-DAC-701-2],Japan International Cooperation Agency [JP-8],IATI,n/a,0
+24,Japan,Japanese International Co-operation Agency,CRS,1,0
+24,Ministry of Foreign Affairs of Japan [XM-DAC-701-2],Japan International Cooperation Agency [JP-8],IATI,0,n/a
 24.4,Korea,Export-Import Bank of Korea,CRS,0,0
-24.4,Korea,Korea International Cooperation Agency,CRS,0,n/a
-24.4,Korea,Ministry of Foreign Affairs and Trade,CRS,0,n/a
-24.4,Korea,Ministry of Strategy and Finance,CRS,0,n/a
-24.4,Korea,Miscellaneous,CRS,0,n/a
-25,"Ministry of education, science, research and sport of the Slovak republic [XM-DAC-69-4]","Ministry of education, science, research and sport of the Slovak republic [XM-DAC-69-4]",IATI,1,n/a
-25,Slovak Aid [XM-DAC-69-2],Slovak Aid [XM-DAC-69-2],IATI,1,n/a
-25,Slovak Republic,"Ministry of Education, Science, Rese (MSVVS)",CRS,0,n/a
-25,Slovak Republic,Slovak Agency for International Deve (SAMRS),CRS,0,n/a
-25,Slovak Republic,Ministry of Foreign and European Affairs (MZVaEZ),CRS,0,n/a
-26,Ministry of Foreign and European Affairs of the Slovak Republic [XM-DAC-69-1],Ministry of Foreign and European Affairs of the Slovak Republic [XM-DAC-69-1],IATI,0,n/a
-26,Netherlands,Ministry of Foreign Affairs of the Netherlands,CRS,1,n/a
-26,Netherlands - Ministry of Foreign Affairs [XM-DAC-7],Netherlands - Ministry of Foreign Affairs [XM-DAC-7],IATI,0,n/a
-27,New Zealand,Ministry of Foreign Affairs and Trade,CRS,0,n/a
-27,New Zealand - Ministry of Foreign Affairs and Trade - New Zealand Aid Programme [NZ-1],New Zealand - Ministry of Foreign Affairs and Trade - New Zealand Aid Programme [NZ-1],IATI,1,n/a
-28,Norad - Norwegian Agency for Development Cooperation [NO-BRC-971277882],Norad - Norwegian Agency for Development Cooperation [NO-BRC-971277882],IATI,1,n/a
-28,Norad - Norwegian Agency for Development Cooperation [NO-BRC-971277882],Norwegian Ministry of Foreign Affairs - Embassies,IATI,1,n/a
-28,Norway,Ministry of Foreign Affairs,CRS,0,n/a
-28,Norway,Norwegian Agency for Development Co-operation,CRS,0,n/a
-30,Spain,Ministry of Economy and Business,CRS,0,1
-30,Spain,Ministry of Industry and Energy,CRS,0,1
-30,Spain,"Ministry of Labour, Migration and Social Security",CRS,0,n/a
-30,Spain,Spanish Agency for International Development Co-operation,CRS,0,n/a
-30,Spain - Ministry of Foreign Affairs and Cooperation [ES-DIR3-E04585801],Spain - Ministry of Foreign Affairs and Cooperation [ES-DIR3-E04585801],IATI,1,0
-30,Spanish Agency for International Development Cooperation (AECID) [ES-DIR3-EA0035768],Spanish Agency for International Development Cooperation (AECID) [ES-DIR3-EA0035768],IATI,1,n/a
-31,Sweden,Ministry of Foreign Affairs,CRS,1,n/a
-31,Sweden,Swedish Council for Higher Education,CRS,1,n/a
-31,Sweden,Swedish Institute,CRS,1,n/a
-31,Sweden,Swedish International Development Authority,CRS,1,n/a
-31,Sweden,The Swedish Research Council,CRS,1,n/a
+24.4,Korea,Korea International Cooperation Agency,CRS,n/a,0
+24.4,Korea,Ministry of Foreign Affairs and Trade,CRS,n/a,0
+24.4,Korea,Ministry of Strategy and Finance,CRS,n/a,0
+24.4,Korea,Miscellaneous,CRS,n/a,0
+25,"Ministry of education, science, research and sport of the Slovak republic [XM-DAC-69-4]","Ministry of education, science, research and sport of the Slovak republic [XM-DAC-69-4]",IATI,n/a,1
+25,Slovak Aid [XM-DAC-69-2],Slovak Aid [XM-DAC-69-2],IATI,n/a,1
+25,Slovak Republic,"Ministry of Education, Science, Rese (MSVVS)",CRS,n/a,0
+25,Slovak Republic,Slovak Agency for International Deve (SAMRS),CRS,n/a,0
+25,Slovak Republic,Ministry of Foreign and European Affairs (MZVaEZ),CRS,n/a,0
+26,Ministry of Foreign and European Affairs of the Slovak Republic [XM-DAC-69-1],Ministry of Foreign and European Affairs of the Slovak Republic [XM-DAC-69-1],IATI,n/a,0
+26,Netherlands,Ministry of Foreign Affairs of the Netherlands,CRS,n/a,1
+26,Netherlands - Ministry of Foreign Affairs [XM-DAC-7],Netherlands - Ministry of Foreign Affairs [XM-DAC-7],IATI,n/a,0
+27,New Zealand,Ministry of Foreign Affairs and Trade,CRS,n/a,0
+27,New Zealand - Ministry of Foreign Affairs and Trade - New Zealand Aid Programme [NZ-1],New Zealand - Ministry of Foreign Affairs and Trade - New Zealand Aid Programme [NZ-1],IATI,n/a,1
+28,Norad - Norwegian Agency for Development Cooperation [NO-BRC-971277882],Norad - Norwegian Agency for Development Cooperation [NO-BRC-971277882],IATI,n/a,1
+28,Norad - Norwegian Agency for Development Cooperation [NO-BRC-971277882],Norwegian Ministry of Foreign Affairs - Embassies,IATI,n/a,1
+28,Norway,Ministry of Foreign Affairs,CRS,n/a,0
+28,Norway,Norwegian Agency for Development Co-operation,CRS,n/a,0
+30,Spain,Ministry of Economy and Business,CRS,1,0
+30,Spain,Ministry of Industry and Energy,CRS,1,0
+30,Spain,"Ministry of Labour, Migration and Social Security",CRS,n/a,0
+30,Spain,Spanish Agency for International Development Co-operation,CRS,n/a,0
+30,Spain - Ministry of Foreign Affairs and Cooperation [ES-DIR3-E04585801],Spain - Ministry of Foreign Affairs and Cooperation [ES-DIR3-E04585801],IATI,0,1
+30,Spanish Agency for International Development Cooperation (AECID) [ES-DIR3-EA0035768],Spanish Agency for International Development Cooperation (AECID) [ES-DIR3-EA0035768],IATI,n/a,1
+31,Sweden,Ministry of Foreign Affairs,CRS,n/a,1
+31,Sweden,Swedish Council for Higher Education,CRS,n/a,1
+31,Sweden,Swedish Institute,CRS,n/a,1
+31,Sweden,Swedish International Development Authority,CRS,n/a,1
+31,Sweden,The Swedish Research Council,CRS,n/a,1
 31,"Sweden, through Swedish International Development Cooperation Agency (Sida) [SE-0]","Sweden, through Swedish International Development Cooperation Agency (Sida) [SE-0]",IATI,0,0
-32,Switzerland,Swiss Agency for Development and Co-operation,CRS,0,n/a
-32,Switzerland - Swiss Agency for Development and Cooperation (SDC) [CH-4],Switzerland - Swiss Agency for Development and Cooperation (SDC) [CH-4],IATI,1,n/a
-33,UNAIDS,UNAIDS,CRS,1,n/a
-33,United Nations Joint Programme on HIV and AIDS Secretariat (UNAIDS) [XM-DAC-41110],United Nations Joint Programme on HIV and AIDS Secretariat (UNAIDS) [XM-DAC-41110],IATI,0,n/a
-34,UNDP,UNDP,CRS,1,n/a
+32,Switzerland,Swiss Agency for Development and Co-operation,CRS,n/a,0
+32,Switzerland - Swiss Agency for Development and Cooperation (SDC) [CH-4],Switzerland - Swiss Agency for Development and Cooperation (SDC) [CH-4],IATI,n/a,1
+33,UNAIDS,UNAIDS,CRS,n/a,1
+33,United Nations Joint Programme on HIV and AIDS Secretariat (UNAIDS) [XM-DAC-41110],United Nations Joint Programme on HIV and AIDS Secretariat (UNAIDS) [XM-DAC-41110],IATI,n/a,0
+34,UNDP,UNDP,CRS,n/a,1
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],African Development Bank [46002],IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],Agence Française de Développement [FR-3],IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],AGENCIA ESPANOLA DE COOPERACION INTERNACIONAL [10216],IATI,n/a,n/a
@@ -185,15 +185,15 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],Switzerland - Swiss Agency for Development and Cooperation (SDC) [CH-4],IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],"UK - Foreign, Commonwealth and Development Office [GB-GOV-1]",IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],UNITED NATIONS CHILDRENS FUND [41122],IATI,n/a,n/a
-34,United Nations Development Programme (UNDP) [XM-DAC-41114],United Nations Development Programme (UNDP) [XM-DAC-41114],IATI,0,n/a
+34,United Nations Development Programme (UNDP) [XM-DAC-41114],United Nations Development Programme (UNDP) [XM-DAC-41114],IATI,n/a,0
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],United Nations Institute for Training and Research [10004],IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA) [41127],IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],United States [US-USAGOV],IATI,n/a,n/a
 34,United Nations Development Programme (UNDP) [XM-DAC-41114],WORLD FOOD PROGRAMME [41140],IATI,n/a,n/a
-35,UNHCR,UNHCR,CRS,1,n/a
-35,UNHCR,United Nations High Commissioner for Refugees,CRS,0,n/a
-35,United Nations High Commissioner for Refugees (UNHCR) [XM-DAC-41121],United Nations High Commissioner for Refugees (UNHCR) [XM-DAC-41121],IATI,0,n/a
-36,UNICEF,UNICEF,CRS,0,n/a
+35,UNHCR,UNHCR,CRS,n/a,1
+35,UNHCR,United Nations High Commissioner for Refugees,CRS,n/a,0
+35,United Nations High Commissioner for Refugees (UNHCR) [XM-DAC-41121],United Nations High Commissioner for Refugees (UNHCR) [XM-DAC-41121],IATI,n/a,0
+36,UNICEF,UNICEF,CRS,n/a,0
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],Australia ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],Australian Committee for UNICEF ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],BASIC EDUCATION AND GENDER EQUALITY ,IATI,n/a,n/a
@@ -231,7 +231,7 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],Netherlands ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],Netherlands Committee for UNICEF ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],New Zealand Committee for UNICEF ,IATI,n/a,n/a
-36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],No data,IATI,0,n/a
+36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],No data,IATI,n/a,0
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],Norway ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],Nutrition International ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],OECD - France ,IATI,n/a,n/a
@@ -251,7 +251,7 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],UNITAID ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Arab Emirates ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Kingdom Committee for UNICEF ,IATI,n/a,n/a
-36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Nations Children's Fund (UNICEF) [XM-DAC-41122],IATI,0,n/a
+36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Nations Children's Fund (UNICEF) [XM-DAC-41122],IATI,n/a,0
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Nations Foundation Inc. ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Nations Joint Programme ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],United Nations Multi Partner Trust ,IATI,n/a,n/a
@@ -265,7 +265,7 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],USAID/Food for Peace ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],World Bank - Washington D.C. ,IATI,n/a,n/a
 36,United Nations Children's Fund (UNICEF) [XM-DAC-41122],YOUNG CHILD SURVIVAL & DEVELOPMENT ,IATI,n/a,n/a
-37,MasterCard Foundation,MasterCard Foundation,CRS,0,n/a
+37,MasterCard Foundation,MasterCard Foundation,CRS,n/a,0
 37,Mastercard Foundation [CA-CRA_ACR-817387277],Mastercard Foundation [CA-CRA_ACR-817387277],IATI,n/a,n/a
 38,United Nations World Food Programme (WFP) [XM-DAC-41140],Australia [AUL],IATI,n/a,n/a
 38,United Nations World Food Programme (WFP) [XM-DAC-41140],Austria [AUS],IATI,n/a,n/a
@@ -293,28 +293,28 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 38,United Nations World Food Programme (WFP) [XM-DAC-41140],UN Common Funds and Agencies [1],IATI,n/a,n/a
 38,United Nations World Food Programme (WFP) [XM-DAC-41140],UN Other Funds and Agencies (excl. CERF) [1],IATI,n/a,n/a
 38,United Nations World Food Programme (WFP) [XM-DAC-41140],United Kingdom [UK],IATI,n/a,n/a
-38,United Nations World Food Programme (WFP) [XM-DAC-41140],United Nations World Food Programme (WFP) [XM-DAC-41140],IATI,0,n/a
+38,United Nations World Food Programme (WFP) [XM-DAC-41140],United Nations World Food Programme (WFP) [XM-DAC-41140],IATI,n/a,0
 38,United Nations World Food Programme (WFP) [XM-DAC-41140],USA [USA],IATI,n/a,n/a
-38,WFP,WFP,CRS,1,n/a
+38,WFP,WFP,CRS,n/a,1
 40.4,Millennium Challenge Corporation [US-18],Millennium Challenge Corporation [US-18],IATI,n/a,n/a
-39,United States,African Development Foundation,CRS,1,n/a
-39,United States,Department of Defense,CRS,1,n/a
-39,United States,Department of Energy,CRS,1,n/a
-39,United States,Department of Health and Human Services,CRS,1,n/a
-39,United States,Department of Homeland Security,CRS,1,n/a
-39,United States,Department of Labor,CRS,1,n/a
-39,United States,Department of the Interior,CRS,1,n/a
-39,United States,Department of Treasury,CRS,1,n/a
-39,United States,Millennium Challenge Corporation,CRS,1,n/a
-39,United States,Peace Corps,CRS,1,n/a
-39,United States,State Department,CRS,1,n/a
-39,United States,Trade and Development Agency,CRS,1,n/a
-39,United States [US-USAGOV],United States [US-USAGOV],IATI,0,n/a
-40,United States,Agency for International Development,CRS,1,n/a
-40,United States Agency for International Development (USAID) [US-GOV-1],United States Agency for International Development (USAID) [US-GOV-1],IATI,0,n/a
-41,World Health Organisation,WHO,CRS,1,n/a
-41,World Health Organisation,WHO Assessed contributions,CRS,1,n/a
-41,World Health Organisation,WHO Core Voluntary contributions,CRS,1,n/a
+39,United States,African Development Foundation,CRS,n/a,1
+39,United States,Department of Defense,CRS,n/a,1
+39,United States,Department of Energy,CRS,n/a,1
+39,United States,Department of Health and Human Services,CRS,n/a,1
+39,United States,Department of Homeland Security,CRS,n/a,1
+39,United States,Department of Labor,CRS,n/a,1
+39,United States,Department of the Interior,CRS,n/a,1
+39,United States,Department of Treasury,CRS,n/a,1
+39,United States,Millennium Challenge Corporation,CRS,n/a,1
+39,United States,Peace Corps,CRS,n/a,1
+39,United States,State Department,CRS,n/a,1
+39,United States,Trade and Development Agency,CRS,n/a,1
+39,United States [US-USAGOV],United States [US-USAGOV],IATI,n/a,0
+40,United States,Agency for International Development,CRS,n/a,1
+40,United States Agency for International Development (USAID) [US-GOV-1],United States Agency for International Development (USAID) [US-GOV-1],IATI,n/a,0
+41,World Health Organisation,WHO,CRS,n/a,1
+41,World Health Organisation,WHO Assessed contributions,CRS,n/a,1
+41,World Health Organisation,WHO Core Voluntary contributions,CRS,n/a,1
 41,World Health Organization [XM-DAC-928],Americans for UNFPA ,IATI,n/a,n/a
 41,World Health Organization [XM-DAC-928],Assessed Contributions ,IATI,n/a,n/a
 41,World Health Organization [XM-DAC-928],Bill & Melinda Gates Foundation ,IATI,n/a,n/a
@@ -354,39 +354,39 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 41,World Health Organization [XM-DAC-928],United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA) ,IATI,n/a,n/a
 41,World Health Organization [XM-DAC-928],United Nations Population Fund (UNFPA) ,IATI,n/a,n/a
 41,World Health Organization [XM-DAC-928],United States Agency for International Development (USAID) ,IATI,n/a,n/a
-41,World Health Organization [XM-DAC-928],World Health Organization [XM-DAC-928],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief),Charity Projects Ltd,CRS,1,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326568 ],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326568],IATI,0,n/a
+41,World Health Organization [XM-DAC-928],World Health Organization [XM-DAC-928],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief),Charity Projects Ltd,CRS,n/a,1
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326568 ],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326568],IATI,n/a,0
 42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326570],IATI,n/a,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326572],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326573],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326574],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326575],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326576],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326577],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326578],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326579],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326580],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326581],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326582],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326583],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326594],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326595],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326596],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326597],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326598],IATI,0,n/a
-42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326599],IATI,0,n/a
-43,African Development Bank,AfDB African Water Facility Fund,CRS,1,n/a
-43,African Development Bank,AfDB Ordinary Capital,CRS,n/a,1
-43,African Development Bank,Fund for African Private Sector Assistance,CRS,1,n/a
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326572],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326573],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326574],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326575],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326576],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326577],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326578],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326579],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326580],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326581],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326582],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326583],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326594],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326595],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326596],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326597],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326598],IATI,n/a,0
+42,Charity Projects Ltd (Comic Relief) [GB-CHC-326568],Charity Projects Ltd (Comic Relief) [GB-CHC-326599],IATI,n/a,0
+43,African Development Bank,AfDB African Water Facility Fund,CRS,n/a,1
+43,African Development Bank,AfDB Ordinary Capital,CRS,1,n/a
+43,African Development Bank,Fund for African Private Sector Assistance,CRS,n/a,1
 43,African Development Bank [XM-DAC-46002],African Development Bank [XM-DAC-46002],IATI,0,0
 43,African Development Bank [XM-DAC-46002],African Development Fund [XM-DAC-46003],IATI,0,0
 43,African Development Bank [XM-DAC-46002],Government Of Ethiopia ,IATI,n/a,n/a
-43,African Development Bank [XM-DAC-46002],Rural Water Supply & Sanitation [XM-DAC-RWSSI],IATI,0,n/a
+43,African Development Bank [XM-DAC-46002],Rural Water Supply & Sanitation [XM-DAC-RWSSI],IATI,n/a,0
 43,African Development Fund,AfDF,CRS,1,1
-45,EU Institutions,European Investment Bank,CRS,n/a,1
-45,European Investment Bank [XM-DAC-918-3],European Investment Bank [XM-DAC-918-3],IATI,n/a,0
+45,EU Institutions,European Investment Bank,CRS,1,n/a
+45,European Investment Bank [XM-DAC-918-3],European Investment Bank [XM-DAC-918-3],IATI,0,n/a
 NEW 1,UN Capital Development Fund,UNCDF,CRS ,1,1
 NEW 2,United Nations Industrial Development Organization,UNIDO,CRS,1,1
 NEW 3,WTO - International Trade Centre,International Trade Centre,CRS,1,1
