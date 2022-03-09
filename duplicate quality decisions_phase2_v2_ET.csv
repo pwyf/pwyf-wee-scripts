@@ -37,7 +37,7 @@ Match number,Reporting organisation,Provider Organisation,Data source,Loans,Gran
 10,United Nations Population Fund [41119],United Nations Population Fund [41119],IATI,n/a,n/a
 11,Finland,Finnish Government,CRS,0,n/a
 11,Finland,Ministry of Foreign Affairs,CRS,0,n/a
-11,Finland,(blank),CRS,n/a,0
+11,Finland,,CRS,n/a,0
 11,Finland - Ministry for Foreign Affairs [FI-3],Finland - Ministry for Foreign Affairs [FI-3],IATI,1,n/a
 12,Food and Agriculture Organisation,FAO,CRS,1,n/a
 12,Food and Agriculture Organization of the United Nations (FAO) [XM-DAC-41301],Belgium [XM-DAC-2],IATI,n/a,n/a

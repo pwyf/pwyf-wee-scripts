@@ -71,7 +71,7 @@ Match number,Reporting organisation,Provider organisation,Data sources,Loans,Gra
 16,Germany,Bundesministerium für Wirtschaftliche Zusammenarbeit und Entwicklung,CRS,1,1
 16,Germany,Kreditanstalt f³r Wiederaufbau,CRS,1,1
 16,Germany,Kreditanstalt für Wiederaufbau,CRS,1,1
-16,Germany,(blank),CRS,1,1
+16,Germany,,CRS,1,1
 16,Germany - Ministry for Economic Cooperation and Development [DE-1],Germany - Ministry for Economic Cooperation and Development [DE-1],IATI,0,0
 16,Germany - Ministry for Economic Cooperation and Development [DE-1],"UK - Foreign, Commonwealth and Development Office [GB-GOV-1]",IATI,0,0
 16,Global Fund,Global Fund,CRS,1,1
@@ -111,7 +111,7 @@ Match number,Reporting organisation,Provider organisation,Data sources,Loans,Gra
 20,International Labour Organization (ILO) [XM-DAC-41302],United Nations Development Programme (UNDP) [XM-DAC-41114],IATI,n/a,0
 20,International Labour Organization (ILO) [XM-DAC-41302],United Nations Trust Fund for Human Security ,IATI,n/a,0
 21,Ireland,Department of Foreign Affairs,CRS,n/a,0
-21,Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],Ireland - Department of Foreign Affairs and Trade [XM-DAC-21-1],IATI,n/a,1
+21,Ireland - Department of Foreign Affairs [XM-DAC-21-1],Ireland - Department of Foreign Affairs [XM-DAC-21-1],IATI,n/a,1
 22,AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development [XM-DAC-6-4],AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development [XM-DAC-6-4],IATI,n/a,1
 22,Italy,Direzione Generale per la Cooperazione allo Sviluppo,CRS,n/a,0
 23,Japan,MINISTRY OF FOREIGN AFFAIRS,CRS,n/a,0
