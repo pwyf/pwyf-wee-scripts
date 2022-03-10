@@ -193,6 +193,7 @@ FROM candid
 .import 'Double counts to remove_updated_ET.csv' double_counts_et
 .import 'Double counts to remove_updated_PK.csv' double_counts_pk
 .import 'Double counts to remove_updated_UG.csv' double_counts_ug
+.import 'double_counts_updated.csv' double_counts_updated
 
 create table duplicates as
     select *, 'Ethiopia' AS `Recipient Country` from duplicates_et union all
@@ -202,7 +203,9 @@ create table duplicates as
 create table double_counts as
     select *, 'Ethiopia' AS `Recipient Country` from double_counts_et union all
     select *, 'Pakistan' AS `Recipient Country` from double_counts_pk union all
-    select *, 'Uganda' AS `Recipient Country` from double_counts_ug;
+    select *, 'Uganda' AS `Recipient Country` from double_counts_ug union all
+    select * from double_counts_updated
+;
 
 create table combined_tmp_filters as
 select
