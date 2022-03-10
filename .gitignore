@@ -8,3 +8,6 @@ Zip-CGAP+CANDID/
 *.docx
 covid-transactions.csv
 datasette/
+inspect-data.json
+missing_double_count_joins.csv
+missing_duplicate_joins.csv
