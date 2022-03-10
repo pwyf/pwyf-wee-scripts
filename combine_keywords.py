@@ -1,13 +1,33 @@
+import itertools
 import sqlite3
+import sys
+import unicodedata
+
+# https://stackoverflow.com/questions/11066400/remove-punctuation-from-unicode-formatted-strings
+tbl = dict.fromkeys(i for i in range(sys.maxunicode)
+                      if unicodedata.category(chr(i)).startswith('P'))
+# These appear in the middle of words
+del tbl[ord("-")]
+del tbl[ord("'")]
+print({chr(k): v for k,v in tbl.items()})
+def remove_punctuation(text):
+    return text.translate(tbl)
 
 def make_check_keywords(filename):
     with open(filename) as fp:
-        terms = [term.lower() for term in fp.read().split("\n") if term]
+        terms = fp.read().split("\n")
+        terms = [
+            unicodedata.normalize("NFKC", term.lower())
+            for term in terms
+            if term
+        ]
+        for term in terms:
+            assert term == remove_punctuation(term)
 
     print(terms)
 
     def check_keywords(text):
-        text = text.lower()
+        text = remove_punctuation(unicodedata.normalize("NFKC", text.lower()).replace("- ", " ").replace("' ", " "))
         return any(term in text for term in terms)
 
     return check_keywords

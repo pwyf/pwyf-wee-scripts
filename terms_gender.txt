@@ -4,7 +4,7 @@ girl
 girls
 females
 female
- mother
+mother
 mothers
 motherhood
 maternal
@@ -12,21 +12,19 @@ maternity
 childbirths
 childbirth
 daughters
- daughter
- wife
+daughter
+wife
 wives
 reproductive
-widows
- widow
+widow
  boys 
  boy 
  man 
  men 
 lesbian
 gender
- sex
+ sex 
 girlchild
-
 GEWE
 EVAW
 srhr
@@ -38,27 +36,23 @@ femmes
 femme
 fille
 Filles
- Mère
-mères
+Mère
 maternité
 maternel
 maternité
 Accouchements
 accouchement
-Filles
- Fille
+Fille
 épouse
 épouses
 reproductif
-Veuves
- veuve
- Garçons 
- garçon 
+ veuve 
+Garçon
  homme 
  hommes 
 lesbienne
 genre
- sexe
+ sexe 
 petite fille
 srhr
  mâle 
@@ -71,7 +65,7 @@ Mädchen
 Mädchen
 Frauen
 Weiblich
- Mutter
+ Mutter 
 Mütter
 Mutterschaft
 mütterlich
@@ -79,19 +73,19 @@ Mutterschaft
 Geburten
 Entbindung
 Töchter
- Tochter
- Ehefrau
+ Tochter 
+ Ehefrau 
 Ehefrauen
 reproduktiv
 Witwen
- Witwe
+ Witwe 
  Jungen 
  Junge 
  Mann 
  Männer 
 lesbe
 Geschlecht
- Sex
+ Sex 
 Mädchen kind
 srgr
  Männlich 
@@ -100,7 +94,7 @@ mujeres
 mujer
 muchacha
 Chicas
- madre
+ madre 
 Madres
 maternidad
 materno
@@ -108,18 +102,18 @@ maternidad
 Partos
 parto
 hijas
- hija
- esposa
+ hija 
+ esposa 
 Esposas
 reproductivo
 Viudas
- viuda
+ viuda 
  muchachos 
  muchacho 
  hombre 
  hombres 
 género
- sexo
+ sexo 
 masculino 
 joven
 DSSR
