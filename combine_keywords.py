@@ -3,12 +3,13 @@ import sqlite3
 import sys
 import unicodedata
 
-# https://stackoverflow.com/questions/11066400/remove-punctuation-from-unicode-formatted-strings
-tbl = dict.fromkeys(i for i in range(sys.maxunicode)
-                      if unicodedata.category(chr(i)).startswith('P'))
 # These appear in the middle of words
-del tbl[ord("-")]
-del tbl[ord("'")]
+punctuation_to_keep = ["-", "–", "'", "’", "_"]
+
+# https://stackoverflow.com/questions/11066400/remove-punctuation-from-unicode-formatted-strings
+tbl = {i:" " for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith('P')}
+for punctuation in punctuation_to_keep:
+    del tbl[ord(punctuation)]
 print({chr(k): v for k,v in tbl.items()})
 def remove_punctuation(text):
     return text.translate(tbl)
@@ -22,18 +23,27 @@ def make_check_keywords(filename):
             if term
         ]
         for term in terms:
-            assert term == remove_punctuation(term)
+            try:
+                assert term == remove_punctuation(term)
+            except AssertionError:
+                print(term)
+                raise
 
     print(terms)
 
     def check_keywords(text):
-        text = remove_punctuation(unicodedata.normalize("NFKC", text.lower()).replace("- ", " ").replace("' ", " "))
+        text = unicodedata.normalize("NFKC", text.lower())
+        for punctuation in punctuation_to_keep:
+            # punctuation we want to keep followed by a space is not in the middle of a word, so remove
+            text = text.replace(punctuation+" ", " ")
+        text = remove_punctuation(text) 
         return any(term in text for term in terms)
 
     return check_keywords
 
 con = sqlite3.connect("crs_candid_cgap.db")
-con.create_function("check_keywords_gender", 1, make_check_keywords("terms_gender.txt"))
+for term_category in ["gender", "covid", "wfi", "wec", "groups_of_women"]:
+    con.create_function(f"check_keywords_{term_category}", 1, make_check_keywords(f"terms/{term_category}.txt"))
 cursor = con.cursor()
 with open("combine_keywords.sql") as fp:
     cursor.executescript(fp.read())

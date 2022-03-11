@@ -1,0 +1,461 @@
+financial inclusion
+financial exclusion
+financial resilience
+financial autonomy
+financial services
+ FSP 
+financial capability
+financial education
+financial literacy
+financial access
+financial curriculum
+banking
+unbanked
+underbanked
+loan
+lending
+money
+credit
+debit
+delinquency
+checking account
+ atm 
+entrepreneur
+microfinance
+micro finance
+micro-finance
+microcredit
+micro credit
+micro-credit
+micro-lending
+micro loan
+microloan
+micro-loan
+borrower
+borrowing
+collateral free loan insurance
+msme
+ sme 
+capital
+micro-entrepreneur
+microentrepreneur
+enterprise
+social business
+social enterprise
+social entrepreneur 
+pensions
+payment
+cash transfers
+informal income
+consumer protection
+Digital wage payment
+fintech
+electronic money
+e-money
+mobile money
+mobile financial services
+mfs
+digital finance
+dfs
+digital payment
+branchless banking
+cico
+transaction
+vsla
+village savings and lending
+rosca
+tontine
+ asca 
+mfi 
+kyc
+ekyc
+biometric
+digital id
+ ids 
+national id
+digital identification
+national identification 
+savings accounts
+savings and credit
+credit and saving
+savings instruments
+microsaving
+SACCO
+savings group
+saving and investment
+savings and loan
+saving scheme
+savings scheme
+savings-led
+agricultural finance
+agricultural financing
+agri-finance
+agriFI 
+biometric
+social protection
+social security
+social safety nets 
+Deposit Pension Scheme
+ dps 
+provident fund
+worker welfare fund
+workers participation fund
+micro insurance
+asset financing
+collateral
+climate insurance
+health insurance
+LPO financing
+group loan
+chama
+insurance
+digital wage payment
+social business
+savings account
+current account
+Domiciliary account
+corporate account
+pin number
+ pos 
+money Lender
+interest
+business
+cashless
+funds transfer
+mobile banking
+Driver’s license
+Voters register
+BVN
+Asusu
+Adashe
+Ajo
+interest free banking
+contribution
+firm
+establishment
+venture capital
+VC
+l’inclusion financière
+exclusion financière
+la résilience financière
+autonomie financière
+services financiers
+capacité financière
+l’éducation financière
+littératie financière
+l’accès financier
+programme d’études financières
+bancaire
+non bancarisé
+sous-bancarisé
+prêt
+prêt
+argent
+crédit
+débit
+délinquance
+compte courant
+ATM
+entrepreneur
+microfinance
+microfinancement
+la microfinance
+microcrédit
+micro crédit
+micro prêt
+micro-prêt
+emprunteur
+emprunt
+assurance prêt sans garantie
+ PME 
+micro-entrepreneur
+microentrepreneur
+entreprise
+l’entreprise sociale
+entreprise sociale
+entrepreneur social 
+Pensions
+paiement
+transferts en espèces
+revenu informel
+protection du consommateur
+Paiement des salaires numériques
+monnaie électronique
+monnaie électronique
+l’argent mobile
+services financiers mobiles
+finance numérique
+paiement numérique
+services bancaires sans succursale
+l’épargne et les prêts des villages
+biométrique
+identification numérique
+identifiant national
+identification numérique
+identification nationale 
+comptes d’épargne
+épargne et crédit
+crédit et épargne
+instruments d’épargne
+microenregistrement
+groupe d’épargne
+épargne et investissement
+épargne et prêt
+plan d’épargne
+plan d’épargne
+l’épargne
+financement agricole
+financement agricole
+l’agro-finance
+biométrique
+protection sociale
+sécurité sociale
+filets de sécurité sociale 
+Régime de pension de dépôt
+caisse de prévoyance
+fonds de protection sociale des travailleurs
+fonds de participation des travailleurs
+microassurance
+financement d’actifs
+collatéral
+assurance climat
+assurance maladie
+Financement LPO
+prêt de groupe
+assurance
+paiement numérique des salaires
+l’entreprise sociale
+compte d’épargne
+compte courant
+Compte à domicile
+compte d’entreprise
+numéro d’épingle
+prêteur d’argent
+intérêt
+affaire
+sans espèces
+transfert de fonds
+services bancaires mobiles
+Permis de conduire
+Registre des électeurs
+services bancaires sans intérêt
+ferme
+établissement
+capital-risque
+finanzielle Inklusion
+finanzieller Ausschluss
+finanzielle Widerstandsfähigkeit
+Finanzautonomie
+Finanzdienstleistungen
+finanzielle Leistungsfähigkeit
+Finanzbildung
+Finanzkompetenz
+finanzieller Zugang
+Finanzcurriculum
+Bankwesen
+ohne Bankverbindung
+unterbankiert
+Darlehen
+leihend
+Geld
+Kredit
+Soll
+delinquenz
+Girokonto
+geldautomat
+Unternehmer
+Mikrofinanzierung
+Mikrofinanzierung
+Mikrofinanzierung
+Mikrokredit
+Mikro kredit
+Mikro-kredit
+Mikrokredite
+Mikro kredit
+Entleiher
+Entlehnung
+Sicherheitenfreie Kreditversicherung
+Kmu
+Kapital
+Kleinstunternehmer
+Mikrounternehmer
+Unternehmen
+Soziales Geschäft
+Sozialunternehmen
+Sozialunternehmer 
+Renten
+Zahlung
+Geldtransfers
+informelles Einkommen
+Verbraucherschutz
+Digitale Lohnzahlung
+elektronisches Geld
+E-Geld
+Mobiles Geld
+mobile Finanzdienstleistungen
+Digitale Finanzen
+digitale Zahlung
+filialloses Banking
+Transaktion
+Dorfsparen und -verleihen
+biometrisch
+digitale ID
+nationale ID
+digitale Identifikation
+nationale Identifizierung 
+Sparkonten
+Ersparnisse und Kredite
+Kredit und Sparen
+Sparinstrumente
+Mikrosaving
+Spargruppe
+Sparen und Investieren
+Sparen und Verleihen
+Sparschema
+Sparplan
+Einsparungen
+Agrarfinanzierung
+biometrisch
+Sozialschutz
+Sozialversicherung
+soziale Sicherheitsnetze 
+Einlagen-Rentensystem
+Vorsorgefonds
+Arbeitnehmerwohlfahrtsfonds
+Arbeitnehmerbeteiligungsfonds
+Mikroversicherung
+Vermögensfinanzierung
+Sicherheit
+Klimaversicherung
+Krankenversicherung
+LPO-Finanzierung
+Gruppenkredit
+Versicherung
+digitale Lohnzahlung
+Soziales Geschäft
+Sparkonto
+Girokonto
+Hauskonto
+Firmenkonto
+PIN-Nummer
+Geld Kreditgeber
+Zins
+Geschäft
+bargeldlos
+Überweisung
+Mobiles Banking
+Führerschein
+Wählerverzeichnis
+zinsloses Banking
+Beitrag
+Firma
+Einrichtung
+Risikokapital
+inclusión financiera
+exclusión financiera
+resiliencia financiera
+autonomía financiera
+servicios financieros
+capacidad financiera
+educación financiera
+educación financiera
+acceso financiero
+plan de estudios financiero
+banca
+no bancarizado
+subbancarizado
+préstamo
+prestación
+dinero
+crédito
+débito
+cuenta corriente
+cajero
+empresario
+microfinanza
+microfinanzas
+microfinanciación
+microcrédito
+microcréditos
+micro préstamo
+micropréstamo
+prestatario
+préstamo
+seguro de préstamo sin garantía
+PYME
+micro-empresario
+microempresario
+empresa
+negocios sociales
+empresa social
+emprendedor social 
+Pensiones
+pago
+transferencias de efectivo
+ingresos informales
+protección del consumidor
+Pago digital de salarios
+dinero electrónico
+Dinero electrónico
+dinero móvil
+servicios financieros móviles
+finanzas digitales
+pago digital
+banca sin sucursales
+transacción
+ahorros y préstamos en las aldeas
+biométrico
+id digital
+Identificadores
+identificación nacional
+identificación digital
+identificación nacional 
+cuentas de ahorro
+ahorro y crédito
+crédito y ahorro
+instrumentos de ahorro
+microguardo
+grupo de ahorro
+ahorro e inversión
+ahorros y préstamos
+esquema de ahorro
+plan de ahorro
+ahorro-conducido
+financiación agrícola
+agrofinanzas
+biométrico
+protección social
+seguridad social
+redes de seguridad social 
+Plan de pensiones de depósito
+fondo de previsión
+fondo de bienestar de los trabajadores
+fondo de participación de los trabajadores
+microseguros
+financiación de activos
+colateral
+seguro climático
+seguro de enfermedad
+Financiamiento de LPO
+préstamo de grupo
+seguro
+pago de salarios digitales
+negocios sociales
+Ahorros
+cuenta corriente
+Cuenta domiciliaria
+cuenta corporativa
+número de pin
+prestamista de dinero
+interés
+negocio
+Cashless
+transferencia de fondos
+banca móvil
+Licencia de conducir
+Registro de electores
+banca sin intereses
+contribución
+firme
+establecimiento
+capital de riesgo
