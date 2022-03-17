@@ -43,7 +43,8 @@ CREATE TABLE combined_tmp  AS SELECT
     NULL AS `RegionName`,
     NULL AS `USD_Commitment`,
     `iati_identifier` AS `Unique ID`,
-    `gender_marker_significance` AS `Gender Marker Significance`,
+    `gender_marker_significance` AS `Gender Marker`,
+    CAST(`gender_marker_significance` AS INTEGER) >= 1 AS `Gender Marker v2`,
     `value_usd` AS `Value (USD)`,
     `flow_type` AS `Flow Type`,
 
@@ -85,7 +86,8 @@ SELECT
     NULL AS `RegionName`,
     ` Commitments USD` AS `USD_Commitment`,
     `Unique ID` AS `Unique ID`,
-    `Women` AS `Gender Marker Significance`,
+    `Women` AS `Gender Marker`,
+    CAST (`Women` AS INTEGER) AS `Gender Marker v2`,
     NULL AS `Value (USD)`,
     '' AS `Flow Type`,
 
@@ -125,7 +127,8 @@ SELECT
     `RegionName` AS `RegionName`,
     `USD_Commitment*1M` AS `USD_Commitment`,
     `CrsID` AS `Unique ID`,
-    `Gender` AS `Gender Marker Significance`,
+    `Gender` AS `Gender Marker`,
+    CAST(`Gender` AS INTEGER) >= 1 AS `Gender Marker v2`,
     NULL AS `Value (USD)`,
     `FlowCode` || ' - ' || `FlowName` AS `Flow Type`,
 
@@ -165,7 +168,8 @@ SELECT
     NULL AS `RegionName`,
     NULL AS `USD_Commitment`,
     `Unique ID`,
-    `Gender marker` AS `Gender Marker Significance`,
+    `Gender marker` AS `Gender Marker`,
+    (`Gender marker` LIKE '%women%' OR `Gender marker` LIKE '%girls%') AS `Gender Marker v2`,
     `Value (USD)`,
     '' AS `Flow Type`,
 
