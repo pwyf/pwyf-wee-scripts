@@ -2,7 +2,12 @@ Flow name,Loan Y/N,Grant Y/N,Country reported,Data source
 19,Y,N,,IATI/CRS
 11,N,Y,,IATI/CRS
 13,Y,N,,IATI/CRS
-14,Exclude UNLESS the finance type is relevant,Exclude UNLESS the finance type is relevant,,IATI/CRS
-30,Y,N,,IATI/CRS
+14,B,B,,IATI/CRS
+30,Y,B,,IATI/CRS
 ,B,B,,ALL
 No data,B,B,,ALL
+10,B,B,,
+21,Y,B,,IATI/CRS
+50,B,B,,IATI/CRS
+20,B,B,,IATI/CRS
+35,B,B,,IATI/CRS
