@@ -8,6 +8,11 @@ ATTACH DATABASE 'iati_data_filtered.db' AS iati_data_filtered;
 .import './Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Ethiopia.csv' candid_ethiopia
 .import './Zip-CGAP+CANDID/CGAP-Phase2-de-duplicated.csv' cgap
 
+.import './Sector.csv' iati_sector
+.import './SectorCategory.csv' iati_sector_category
+.import 'Phase 2 sectors+purpose codes tidied-V2_CANDID.csv' sector_names_candid
+.import 'Phase 2 sectors+purpose codes tidied-V2_CGAP.csv' sector_names_cgap
+
 -- Note: This relies on the columns being the same across all 3
 CREATE TABLE crs AS
     SELECT * FROM crs_uganda UNION ALL
@@ -34,9 +39,9 @@ CREATE TABLE combined_tmp  AS SELECT
     `transaction_type` AS `Transaction Type`,
     trim(substr(`country_code`, instr(`country_code` || '-', '-') + 2)) AS `Recipient Country`,
     `sector_category` AS `Sector code (3-digit)`,
-    `sector_category_name` AS `Sector name (3-digit)`,
+    COALESCE(iati_sector_category.name, `sector_category_name`) AS `Sector name (3-digit)`,
     `sector_code` AS `Purpose code (5-digit)`,
-    `sector_code_name` AS `Purpose name (5-digit)`,
+    COALESCE(iati_sector.name, `sector_code_name`) AS `Purpose name (5-digit)`,
     `fiscal_year` AS `Year`,
     `description#en` AS `Description`,
     NULL AS `USD_Disbursement`,
@@ -60,6 +65,8 @@ CREATE TABLE combined_tmp  AS SELECT
     `covid_flag` AS `Covid Marker`,
     `covid_flag_strict` AS `Covid Marker Strict`
 FROM iati_data_filtered.iati_data
+LEFT JOIN iati_sector ON iati_sector.code = sector_code
+LEFT JOIN iati_sector_category ON iati_sector_category.code = sector_category
 UNION ALL
 SELECT
     'CGAP' AS `Data Source`,
@@ -75,10 +82,11 @@ SELECT
     `Ultimate Recipient Type` AS `Receiver Organisation Type`,
     '' AS `Transaction Type`,
     `Country` AS `Recipient Country`,
+    -- TODO is this 3 or 5, is this Candid grant_strategy_tran
     `Final Theme` AS `Sector code (3-digit)`,
-    NULL AS `Sector name (3-digit)`,
+    `Tidied 3-digit sector name` AS `Sector name (3-digit)`,
     NULL AS `Purpose code (5-digit)`,
-    NULL AS `Purpose name (5-digit)`,
+    `Tidied 5-digit purpose name` AS `Purpose name (5-digit)`,
     `Survey Year` AS `Year`,
     `Comment` AS `Description`,
     ` Commitments already disbursed` AS `USD_Disbursement`,
@@ -103,6 +111,7 @@ SELECT
     NULL AS `Covid Marker`,
     NULL AS `Covid Marker Strict`
 FROM cgap
+LEFT JOIN sector_names_cgap ON `Final Theme` = `CGAP final theme`
 UNION ALL
 SELECT
     'CRS' AS `Data Source`,
@@ -118,9 +127,9 @@ SELECT
     '' AS `Transaction Type`,
     `RecipientName` AS `Recipient Country`,
     `SectorCode` AS `Sector code (3-digit)`,
-    `SectorName` AS `Sector name (3-digit)`,
+    COALESCE(iati_sector_category.name, `SectorName`) AS `Sector name (3-digit)`,
     `PurposeCode` AS `Purpose code (5-digit)`,
-    `PurposeName` AS `Purpose name (5-digit)`,
+    COALESCE(iati_sector.name, `PurposeName`) AS `Purpose name (5-digit)`,
     `Year` AS `Year`,
     `LongDescription` AS `Description`,
     `USD_Commitment*1M` AS `USD_Disbursement`,
@@ -144,6 +153,8 @@ SELECT
     NULL AS `Covid Marker`,
     NULL AS `Covid Marker Strict`
 FROM crs
+LEFT JOIN iati_sector ON iati_sector.code = `PurposeCode`
+LEFT JOIN iati_sector_category ON iati_sector_category.code = `SectorCode`
 UNION ALL
 SELECT
     'CANDID' AS `Data Source`,
@@ -159,9 +170,9 @@ SELECT
     `Transaction Type`,
     `Recipient Country`,
     NULL AS `Sector code (3-digit)`,
-    `Sector name (3-digit)`,
+    COALESCE(`Tidied 3-digit sector name`, `Sector name (3-digit)`) AS `Sector name (3-digit)`,
     `Purpose code (5-digit)`,
-    `Purpose name (5-digit)`,
+    COALESCE(`Tidied 5-digit purpose name`, `Purpose name (5-digit)`) AS `Purpose name (5-digit)`,
     `Year`,
     `Description`,
     NULL AS `USD_Disbursement`,
@@ -185,6 +196,7 @@ SELECT
     NULL AS `Covid Marker`,
     NULL AS `Covid Marker Strict`
 FROM candid
+LEFT JOIN sector_names_candid ON `Purpose name (5-digit)` = `Candid grant_strategy_tran`
 ;
 
 
