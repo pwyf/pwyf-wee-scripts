@@ -29,8 +29,6 @@ def make_check_keywords(filename):
                 print(term)
                 raise
 
-    print(terms)
-
     def check_keywords(text):
         text = unicodedata.normalize("NFKC", text.lower())
         for punctuation in punctuation_to_keep:
@@ -44,6 +42,33 @@ def make_check_keywords(filename):
 con = sqlite3.connect("crs_candid_cgap.db")
 for term_category in ["gender", "covid", "wfi", "wec", "groups_of_women"]:
     con.create_function(f"check_keywords_{term_category}", 1, make_check_keywords(f"terms/{term_category}.txt"))
+for term_category in [
+    "Breastfeeding at work",
+    "Care-sensitive Public Works",
+    "Care Services for Older People",
+    "Care Services for those with Additional Needs",
+    "Cash Transfers Related to Care",
+    "Early Childhood Education (ECE)",
+    "Equal Paid Parental Leave",
+    "Flexible Working",
+    "General Unspecified",
+    "Household Electricity",
+    "Measurement frameworks",
+    "Onsite Childcare",
+    "Paid Sick Leave",
+    "Piped Water Communal Water",
+    "Public healthcare services",
+    "Public Pensions",
+    "Public Transport Ridesharing",
+    "Sanitation Services",
+    "School Meals or Vouchers",
+    "Standards prohibiting gender stereotypes in advertising and media representations",
+    "Time- and energy-saving equipment and technologies (TESET)",
+    "Time-use data collection",
+]:
+    term_category_function_name = term_category.replace("(", "").replace(")", "").replace(" ", "_").replace("-", "")
+    print(f"check_keywords_unpaid_care_{term_category_function_name}(`Title`) or check_keywords_unpaid_care_{term_category_function_name}(`Description`) AS `Unpaid care: {term_category} Keyword Match`,")
+    con.create_function(f"check_keywords_unpaid_care_{term_category_function_name}", 1, make_check_keywords(f"terms/unpaid_care/{term_category}.txt"))
 cursor = con.cursor()
 with open("combine_keywords.sql") as fp:
     cursor.executescript(fp.read())

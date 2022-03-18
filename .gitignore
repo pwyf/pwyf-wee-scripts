@@ -2,6 +2,7 @@
 CRS 2015-2020/
 Zip-CGAP+CANDID/
 *.db
+*.db-journal
 *.xls
 *.xlsx
 *.zip
