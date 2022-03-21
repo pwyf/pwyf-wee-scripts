@@ -3,7 +3,8 @@ ATTACH DATABASE 'combined.db' AS combined;
 create table combined.combined as
     select
         *,
-        `Gender Keyword Match` OR `Gender Marker v2` AS `Gender Marker or Keyword` 
+        `Gender Keyword Match` OR `Gender Marker v2` AS `Gender Marker or Keyword`,
+        `COVID Keyword Match` OR `Covid Marker` AS `COVID Marker or Keyword`
     from (select
         *,
 
