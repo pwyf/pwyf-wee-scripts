@@ -131,7 +131,7 @@ SELECT
     `PurposeCode` AS `Purpose code (5-digit)`,
     COALESCE(iati_sector.name, `PurposeName`) AS `Purpose name (5-digit)`,
     `Year` AS `Year`,
-    `LongDescription` AS `Description`,
+    ShortDescription || CASE WHEN substr(ShortDescription, -1, 1) = '.' THEN '. ' ELSE ' ' END || LongDescription AS Description,
     `USD_Commitment*1M` AS `USD_Disbursement`,
     `RegionName` AS `RegionName`,
     `USD_Commitment*1M` AS `USD_Commitment`,
