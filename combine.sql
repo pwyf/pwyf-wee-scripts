@@ -230,12 +230,12 @@ select
     trim(substr(`Flow Type`, 0, instr(`Flow Type` || '-', '-'))) AS `Flow Type Code`,
     -- For CANDID all activities are grants so keep all blanks.
     -- https://publishwhatyoufund.sharepoint.com/:x:/g/ETwXwO_JNGdCkzgQ-LnaYdEBWlJPdkYjNeQY1hEdqQae1w?rtime=xkq1Q4f32Ug
-    case combined_tmp.`Data Source` when 'CANDID' then 'N' else finance_type_filter.`Loan Y/N` end AS `Finance Type Filter Loan Y/N`,
-    case combined_tmp.`Data Source` when 'CANDID' then 'Y' else finance_type_filter.`Grant Y/N` end AS `Finance Type Filter Grant Y/N`,
+    case combined_tmp.`Data Source` when 'CANDID' then 'N' else COALESCE(finance_type_filter.`Loan Y/N`, 'N') end AS `Finance Type Filter Loan Y/N`,
+    case combined_tmp.`Data Source` when 'CANDID' then 'Y' else COALESCE(finance_type_filter.`Grant Y/N`, 'N') end AS `Finance Type Filter Grant Y/N`,
     transaction_type_filter.'Loan Y/N' AS `Transaction Type Filter Loan Y/N`,
     transaction_type_filter.'Grant Y/N' AS `Transaction Type Filter Grant Y/N`,
-    flow_name_filter.`Loan Y/N` AS `Flow Type Filter Loan Y/N`,
-    flow_name_filter.`Grant Y/N` AS `Flow Type Filter Grant Y/N`,
+    COALESCE(flow_name_filter.`Loan Y/N`, 'B') AS `Flow Type Filter Loan Y/N`,
+    COALESCE(flow_name_filter.`Grant Y/N`, 'B') AS `Flow Type Filter Grant Y/N`,
     (finance_type_filter.`Loan Y/N`='Y' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='Y')
         OR (finance_type_filter.`Loan Y/N`='B' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='Y')
         OR (finance_type_filter.`Loan Y/N`='Y' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='B')
