@@ -229,41 +229,44 @@ create table double_counts as
 
 create table combined_tmp_filters as
 select
-    combined_tmp.*,
-    trim(substr(`Finance Type`, 0, instr(`Finance Type` || '-', '-'))) AS `Finance Type Code`,
-    trim(substr(`Flow Type`, 0, instr(`Flow Type` || '-', '-'))) AS `Flow Type Code`,
-    -- For CANDID all activities are grants so keep all blanks.
-    -- https://publishwhatyoufund.sharepoint.com/:x:/g/ETwXwO_JNGdCkzgQ-LnaYdEBWlJPdkYjNeQY1hEdqQae1w?rtime=xkq1Q4f32Ug
-    case combined_tmp.`Data Source` when 'CANDID' then 'N' else COALESCE(finance_type_filter.`Loan Y/N`, 'N') end AS `Finance Type Filter Loan Y/N`,
-    case combined_tmp.`Data Source` when 'CANDID' then 'Y' else COALESCE(finance_type_filter.`Grant Y/N`, 'N') end AS `Finance Type Filter Grant Y/N`,
-    COALESCE(transaction_type_filter.'Loan Y/N', 'N') AS `Transaction Type Filter Loan Y/N`,
-    COALESCE(transaction_type_filter.'Grant Y/N', 'N') AS `Transaction Type Filter Grant Y/N`,
-    COALESCE(flow_name_filter.`Loan Y/N`, 'B') AS `Flow Type Filter Loan Y/N`,
-    COALESCE(flow_name_filter.`Grant Y/N`, 'B') AS `Flow Type Filter Grant Y/N`,
-    (finance_type_filter.`Loan Y/N`='Y' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='Y')
-        OR (finance_type_filter.`Loan Y/N`='B' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='Y')
-        OR (finance_type_filter.`Loan Y/N`='Y' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='B')
+    *,
+    (`Finance Type Filter Loan Y/N`='Y' AND `Transaction Type Filter Loan Y/N`='Y' AND `Flow Type Filter Loan Y/N`='Y')
+        OR (`Finance Type Filter Loan Y/N`='B' AND `Transaction Type Filter Loan Y/N`='Y' AND `Flow Type Filter Loan Y/N`='Y')
+        OR (`Finance Type Filter Loan Y/N`='Y' AND `Transaction Type Filter Loan Y/N`='Y' AND `Flow Type Filter Loan Y/N`='B')
         AS `Loans to keep`,
-    (finance_type_filter.`Grant Y/N`='Y' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='Y')
-        OR (finance_type_filter.`Grant Y/N`='B' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='Y')
-        OR (finance_type_filter.`Grant Y/N`='Y' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='B')
+    (`Finance Type Filter Grant Y/N`='Y' AND `Transaction Type Filter Grant Y/N`='Y' AND `Flow Type Filter Grant Y/N`='Y')
+        OR (`Finance Type Filter Grant Y/N`='B' AND `Transaction Type Filter Grant Y/N`='Y' AND `Flow Type Filter Grant Y/N`='Y')
+        OR (`Finance Type Filter Grant Y/N`='Y' AND `Transaction Type Filter Grant Y/N`='Y' AND `Flow Type Filter Grant Y/N`='B')
         AS `Grants to keep`,
     COALESCE(duplicates."Loans" != '1', 1) AS "Duplicate Loans Keep",
     COALESCE(duplicates."Grants" != '1', 1) AS "Duplicate Grants Keep",
     double_counts."Unique ID" is NULL AS "Double Counts Keep"
-from
-    combined_tmp
-    left join finance_type_filter on `Finance Type Code`=`Finance types`
-    left join transaction_type_filter on `Transaction Type`=`Transaction types`
-    left join flow_name_filter on `Flow Type Code`=`Flow name`
+    from (select
+        combined_tmp.*,
+        trim(substr(`Finance Type`, 0, instr(`Finance Type` || '-', '-'))) AS `Finance Type Code`,
+        trim(substr(`Flow Type`, 0, instr(`Flow Type` || '-', '-'))) AS `Flow Type Code`,
+        -- For CANDID all activities are grants so keep all blanks.
+        -- https://publishwhatyoufund.sharepoint.com/:x:/g/ETwXwO_JNGdCkzgQ-LnaYdEBWlJPdkYjNeQY1hEdqQae1w?rtime=xkq1Q4f32Ug
+        case combined_tmp.`Data Source` when 'CANDID' then 'N' else COALESCE(finance_type_filter.`Loan Y/N`, 'N') end AS `Finance Type Filter Loan Y/N`,
+        case combined_tmp.`Data Source` when 'CANDID' then 'Y' else COALESCE(finance_type_filter.`Grant Y/N`, 'N') end AS `Finance Type Filter Grant Y/N`,
+        COALESCE(transaction_type_filter.'Loan Y/N', 'N') AS `Transaction Type Filter Loan Y/N`,
+        COALESCE(transaction_type_filter.'Grant Y/N', 'N') AS `Transaction Type Filter Grant Y/N`,
+        COALESCE(flow_name_filter.`Loan Y/N`, 'B') AS `Flow Type Filter Loan Y/N`,
+        COALESCE(flow_name_filter.`Grant Y/N`, 'B') AS `Flow Type Filter Grant Y/N`
+    from
+        combined_tmp
+        left join finance_type_filter on `Finance Type Code`=`Finance types`
+        left join transaction_type_filter on `Transaction Type`=`Transaction types`
+        left join flow_name_filter on `Flow Type Code`=`Flow name`
+    ) combined_tmp_filters_tmp
     left join duplicates
     on
-        trim(lower(duplicates.`Reporting organisation`))=trim(lower(combined_tmp.`Reporting Organisation`)) and
-        trim(lower(duplicates.`Provider Organisation`))=trim(lower(combined_tmp.`Provider Organisation`)) and
-        trim(lower(duplicates.`Recipient Country`))=trim(lower(combined_tmp.`Recipient Country`))
+        trim(lower(duplicates.`Reporting organisation`))=trim(lower(combined_tmp_filters_tmp.`Reporting Organisation`)) and
+        trim(lower(duplicates.`Provider Organisation`))=trim(lower(combined_tmp_filters_tmp.`Provider Organisation`)) and
+        trim(lower(duplicates.`Recipient Country`))=trim(lower(combined_tmp_filters_tmp.`Recipient Country`))
     left join double_counts
     on
-        trim(lower(double_counts.`Provider Org. `))=trim(lower(combined_tmp.`Provider Organisation`)) and
-        trim(lower(double_counts.`Unique ID`))=trim(lower(combined_tmp.`Unique ID`))
+        trim(lower(double_counts.`Provider Org. `))=trim(lower(combined_tmp_filters_tmp.`Provider Organisation`)) and
+        trim(lower(double_counts.`Unique ID`))=trim(lower(combined_tmp_filters_tmp.`Unique ID`))
 ;
 
