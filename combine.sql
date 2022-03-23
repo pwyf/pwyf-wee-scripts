@@ -248,8 +248,8 @@ select
         OR (finance_type_filter.`Grant Y/N`='B' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='Y')
         OR (finance_type_filter.`Grant Y/N`='Y' AND transaction_type_filter.`Grant Y/N`='Y' AND flow_name_filter.`Grant Y/N`='B')
         AS `Grants to keep`,
-    duplicates."Loans" AS "Duplicate Loans Keep",
-    duplicates."Grants" AS "Duplicate Grants Keep",
+    COALESCE(duplicates."Loans" != '1', 1) AS "Duplicate Loans Keep",
+    COALESCE(duplicates."Grants" != '1', 1) AS "Duplicate Grants Keep",
     double_counts."Unique ID" is NULL AS "Double Counts Keep"
 from
     combined_tmp
