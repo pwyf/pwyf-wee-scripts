@@ -110,8 +110,8 @@ SELECT
     NULL AS `Activity Start Date`,
     NULL AS `Value (EUR)`,
     NULL AS `Value (Local currrency)`,
-    NULL AS `Covid Marker`,
-    NULL AS `Covid Marker Strict`
+    0 AS `Covid Marker`,
+    0 AS `Covid Marker Strict`
 FROM cgap
 LEFT JOIN sector_names_cgap ON `Final Theme` = `CGAP final theme`
 UNION ALL
@@ -153,8 +153,8 @@ SELECT
     NULL AS `Activity Start Date`,
     NULL AS `Value (EUR)`,
     NULL AS `Value (Local currrency)`,
-    NULL AS `Covid Marker`,
-    NULL AS `Covid Marker Strict`
+    0 AS `Covid Marker`,
+    0 AS `Covid Marker Strict`
 FROM crs
 LEFT JOIN iati_sector ON iati_sector.code = `PurposeCode`
 LEFT JOIN iati_sector_category ON iati_sector_category.code = `SectorCode`
@@ -197,8 +197,8 @@ SELECT
     NULL AS `Activity Start Date`,
     NULL AS `Value (EUR)`,
     NULL AS `Value (Local currrency)`,
-    NULL AS `Covid Marker`,
-    NULL AS `Covid Marker Strict`
+    0 AS `Covid Marker`,
+    0 AS `Covid Marker Strict`
 FROM candid
 LEFT JOIN sector_names_candid ON `Purpose name (5-digit)` = `Candid grant_strategy_tran`
 ;
@@ -236,8 +236,8 @@ select
     -- https://publishwhatyoufund.sharepoint.com/:x:/g/ETwXwO_JNGdCkzgQ-LnaYdEBWlJPdkYjNeQY1hEdqQae1w?rtime=xkq1Q4f32Ug
     case combined_tmp.`Data Source` when 'CANDID' then 'N' else COALESCE(finance_type_filter.`Loan Y/N`, 'N') end AS `Finance Type Filter Loan Y/N`,
     case combined_tmp.`Data Source` when 'CANDID' then 'Y' else COALESCE(finance_type_filter.`Grant Y/N`, 'N') end AS `Finance Type Filter Grant Y/N`,
-    transaction_type_filter.'Loan Y/N' AS `Transaction Type Filter Loan Y/N`,
-    transaction_type_filter.'Grant Y/N' AS `Transaction Type Filter Grant Y/N`,
+    COALESCE(transaction_type_filter.'Loan Y/N', 'N') AS `Transaction Type Filter Loan Y/N`,
+    COALESCE(transaction_type_filter.'Grant Y/N', 'N') AS `Transaction Type Filter Grant Y/N`,
     COALESCE(flow_name_filter.`Loan Y/N`, 'B') AS `Flow Type Filter Loan Y/N`,
     COALESCE(flow_name_filter.`Grant Y/N`, 'B') AS `Flow Type Filter Grant Y/N`,
     (finance_type_filter.`Loan Y/N`='Y' AND transaction_type_filter.`Loan Y/N`='Y' AND flow_name_filter.`Loan Y/N`='Y')
