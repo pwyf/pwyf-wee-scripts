@@ -30,6 +30,8 @@ def make_check_keywords(filename):
                 raise
 
     def check_keywords(text):
+        if text is None:
+            return False
         text = unicodedata.normalize("NFKC", text.lower())
         for punctuation in punctuation_to_keep:
             # punctuation we want to keep followed by a space is not in the middle of a word, so remove
@@ -67,7 +69,6 @@ for term_category in [
     "Time-use data collection",
 ]:
     term_category_function_name = term_category.replace("(", "").replace(")", "").replace(" ", "_").replace("-", "")
-    print(f"check_keywords_unpaid_care_{term_category_function_name}(`Title`) or check_keywords_unpaid_care_{term_category_function_name}(`Description`) AS `Unpaid care: {term_category} Keyword Match`,")
     con.create_function(f"check_keywords_unpaid_care_{term_category_function_name}", 1, make_check_keywords(f"terms/unpaid_care/{term_category}.txt"))
 cursor = con.cursor()
 with open("combine_keywords.sql") as fp:
