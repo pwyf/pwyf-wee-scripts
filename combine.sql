@@ -229,7 +229,7 @@ create table double_counts as
 
 create table combined_tmp_filters as
 select
-    *,
+    combined_tmp_filters_tmp.*,
     (`Finance Type Filter Loan Y/N`='Y' AND `Transaction Type Filter Loan Y/N`='Y' AND `Flow Type Filter Loan Y/N`='Y')
         OR (`Finance Type Filter Loan Y/N`='B' AND `Transaction Type Filter Loan Y/N`='Y' AND `Flow Type Filter Loan Y/N`='Y')
         OR (`Finance Type Filter Loan Y/N`='Y' AND `Transaction Type Filter Loan Y/N`='Y' AND `Flow Type Filter Loan Y/N`='B')
