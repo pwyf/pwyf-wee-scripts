@@ -53,6 +53,7 @@ CREATE TABLE combined_tmp  AS SELECT
     CAST(`gender_marker_significance` AS INTEGER) >= 1 AS `Gender Marker v2`,
     `value_usd` AS `Value (USD)`,
     `flow_type` AS `Flow Type`,
+    NULL as `Currency`,
 
     `provider_org_type` AS `Provider Organisation Type`,
     `multi_country` AS `Multi Country`,
@@ -100,6 +101,7 @@ SELECT
     CAST (`Women` AS INTEGER) AS `Gender Marker v2`,
     NULL AS `Value (USD)`,
     '' AS `Flow Type`,
+    `Currency`,
 
     NULL AS `Provider Organisation Type`,
     NULL AS `Multi Country`,
@@ -143,6 +145,7 @@ SELECT
     CAST(`Gender` AS INTEGER) >= 1 AS `Gender Marker v2`,
     NULL AS `Value (USD)`,
     `FlowCode` || ' - ' || `FlowName` AS `Flow Type`,
+    NULL as `Currency`,
 
     NULL AS `Provider Organisation Type`,
     NULL AS `Multi Country`,
@@ -187,6 +190,7 @@ SELECT
     (`Gender marker` LIKE '%women%' OR `Gender marker` LIKE '%girls%') AS `Gender Marker v2`,
     `Value (USD)`,
     '' AS `Flow Type`,
+    NULL as `Currency`,
 
     NULL AS `Provider Organisation Type`,
     NULL AS `Multi Country`,
