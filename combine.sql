@@ -3,6 +3,9 @@ ATTACH DATABASE 'iati_data_filtered.db' AS iati_data_filtered;
 .import './CRS 2015-2020/Uganda_CRS.csv' crs_uganda
 .import './CRS 2015-2020/CRS_Pakistan.csv' crs_pakistan
 .import './CRS 2015-2020/CRS_Ethiopia.csv' crs_ethiopia
+.separator |
+.import './CRS 2020 data/CRS 2020 data.txt' crs_2020
+.separator ,
 .import './Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Uganda.csv' candid_uganda
 .import './Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Pakistan.csv' candid_pakistan
 .import './Zip-CGAP+CANDID/PublishWhatYouFund_202111- phase 2 countries CANDID_Ethiopia.csv' candid_ethiopia
@@ -161,6 +164,53 @@ SELECT
 FROM crs
 LEFT JOIN iati_sector ON iati_sector.code = `PurposeCode`
 LEFT JOIN iati_sector_category ON iati_sector_category.code = `SectorCode`
+WHERE `Year` != 2020
+UNION ALL
+SELECT
+    'CRS' AS `Data Source`,
+
+    `DonorName` AS `Reporting Organisation`,
+    `AgencyName` AS `Provider Organisation`,
+    `ProjectTitle` AS `Title`,
+    NULL AS `Reporting Organisation Type`,
+    `Aid_t` AS `Aid Type`,
+    `Finance_t` AS `Finance Type`,
+    `ChannelReportedName` AS `Receiver Organisation`,
+    `ChannelName` AS `Receiver Organisation Type`,
+    '' AS `Transaction Type`,
+    `RecipientName` AS `Recipient Country`,
+    `SectorCode` AS `Sector code (3-digit)`,
+    COALESCE(iati_sector_category.name, `SectorName`) AS `Sector name (3-digit)`,
+    `PurposeCode` AS `Purpose code (5-digit)`,
+    COALESCE(iati_sector.name, `PurposeName`) AS `Purpose name (5-digit)`,
+    `Year` AS `Year`,
+    ShortDescription || CASE WHEN substr(ShortDescription, -1, 1) = '.' THEN '. ' ELSE ' ' END || LongDescription AS Description,
+    NULL AS `Target Groups`,
+    `USD_Commitment` * 1000000 AS `USD_Disbursement`,
+    `RegionName` AS `RegionName`,
+    `USD_Commitment` * 1000000 AS `USD_Commitment`,
+    `CrsID` AS `Unique ID`,
+    `Gender` AS `Gender Marker`,
+    CAST(`Gender` AS INTEGER) >= 1 AS `Gender Marker v2`,
+    NULL AS `Value (USD)`,
+    `FlowCode` || ' - ' || `FlowName` AS `Flow Type`,
+    NULL as `Currency`,
+
+    NULL AS `Provider Organisation Type`,
+    NULL AS `Multi Country`,
+    NULL AS `Humanitarian`,
+    NULL AS `Calendar Quarter`,
+    NULL AS `Calendar Year and Quarter`,
+    NULL AS `URL`,
+    NULL AS `Activity Start Date`,
+    NULL AS `Value (EUR)`,
+    NULL AS `Value (Local currrency)`,
+    0 AS `Covid Marker`,
+    0 AS `Covid Marker Strict`
+FROM crs_2020
+LEFT JOIN iati_sector ON iati_sector.code = `PurposeCode`
+LEFT JOIN iati_sector_category ON iati_sector_category.code = `SectorCode`
+WHERE `RecipientName` IN ('Ethiopia', 'Pakistan', 'Uganda')
 UNION ALL
 SELECT
     'CANDID' AS `Data Source`,
