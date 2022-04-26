@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "dokku": {
-      "predeploy": "datasette inspect *.db --inspect-file=inspect-data.json"
-    }
-  }
-}
