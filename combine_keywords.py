@@ -10,7 +10,6 @@ punctuation_to_keep = ["-", "–", "'", "’", "_"]
 tbl = {i:" " for i in range(sys.maxunicode) if unicodedata.category(chr(i)).startswith('P')}
 for punctuation in punctuation_to_keep:
     del tbl[ord(punctuation)]
-print({chr(k): v for k,v in tbl.items()})
 def remove_punctuation(text):
     return text.translate(tbl)
 

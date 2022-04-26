@@ -1,6 +1,7 @@
 .ve
 CRS 2015-2020/
 Zip-CGAP+CANDID/
+CRS 2020 data/
 *.db
 *.db-journal
 *.xls
